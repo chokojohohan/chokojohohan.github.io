@@ -1,6 +1,6 @@
 # 情報工学班のホームページ
-> [chokojohohan.github.io](https://chokojohohan.github.io/)  
-> 現在公開されているページは[こちら](https://chokojohohan.github.io/Computerscienceclub/home.html)
+> - [chokojohohan.github.io](https://chokojohohan.github.io/)  
+> - 現在公開されているページは[こちら](https://chokojohohan.github.io/Computerscienceclub/home.html)
 
 # 長野県長野工業高等学校
 - [ホームページ](https://www.nagano-c.ed.jp/choko/)
