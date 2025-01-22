@@ -30,6 +30,7 @@
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
     opacity: 0;
+    border-radius: 0px !important;
 }
 
 @keyframes fadeUpAnime {
