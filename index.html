@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+    <meta charset="UTF-8">
+    <!-- 確認中のため検索サイトの結果に表示されないよう設定 -->
+    <meta name="robots" content="noindex">
+    <!-- ページの種類 -->
+    <meta property="og:type" content="website" />
+    <!-- SNSに埋め込みしたときのタイトル -->
+    <meta property="og:title" content="ホーム｜長野工業高等学校 情報工学班" />
+    <!-- SNSに埋め込みしたときのURL -->
+    <meta property="og:url" content="https://chokojohohan.github.io/" />
+    <!-- SNSに埋め込みしたときの説明文 -->
+    <meta property="og:description"
+        content="長野県長野工業高等学校 情報工学班のホームページです。情報班の活動内容や雰囲気を伝えられたら幸いです。情報班では新入班員を募集しています。情報科の生徒でなくてもやる気さえあれば入班することができます。" />
+    <meta property="keywords"
+        content="長野工業高等学校,長野工業高校,長工,長野県長野工業高等学校,情報工学科,情報科,情報工学班,情報班,活動日,活動場所,活動報告,情報棟,I棟,活動内容,情報オリンピック,Webサイト制作,Unityゲーム制作,Blender3Dモデル制作,AdobePremierePro動画制作,パズルゲーム,小学生パソコン教室,1年生スクラッチ発表会,プログラミング体験会,学校開放長工祭,学校開放,長工祭,産業フェアin信州,産業フェア,U-15,U-15長野プログラミングコンテスト,">
+    <!-- SNSに埋め込みしたときのサイトの名前 タイトルとはまた別で団体名みたいな -->
+    <meta property="og:site_name" content="長野工業高等学校 情報工学班" />
+    <!-- SNSに埋め込みしたときのイメージ画像 -->
+    <meta property="og:image" content="johoclub_ogp.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#4372c0">
+    <meta name="description"
+        content="長野県長野工業高等学校 情報工学班のホームページです。情報班の活動内容や雰囲気を伝えられたら幸いです。情報班では新入班員を募集しています。情報科の生徒でなくてもやる気さえあれば入班することができます。">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>長野工業高等学校 情報工学班</title>
+    <!-- ホームページの正式なURL -->
+    <link rel="canonical" href="">
+    <link rel="icon" href="joulogo.png">
+    <link rel="apple-touch-icon" href="joulogo.png">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="style/background.css">
+    <link rel="stylesheet" type="text/css" href="style/scroll.css">
+    <link rel="stylesheet" type="text/css" href="style/gallery.css">
+    <link rel="stylesheet" type="text/css" href="style/loading.css">
+    <link rel="stylesheet" type="text/css" href="style/menu.css">
+    <link rel="stylesheet" type="text/css" href="style/link_card.css">
+    <link rel="stylesheet" type="text/css" href="style/style-sp.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+</head>
+
+<body>
+    <div id="splash">
+        <div id="splash_logo"><img src="logo_w.svg" alt="" class="fadeUp"></div>
+    </div>
+    <!-- <div class="splashbg"></div> -->
+    <div id="container">
+        <header id="header">
+            <a class="imglink" href="#">
+                <img class="headerlogo" src="logo.svg">
+            </a>
+        </header>
+        <main>
+            <div class="openbtn"><span></span><span></span><span></span></div>
+            <nav id="g-nav">
+                <!-- <div id="g-nav-list">
+                    <ul>
+                        <li><a class="nav" href="#">TOP</a></li>
+                        <li class="has-child">
+                            <a class="nav" href="#">ABOUT</a>
+                            <ul class="dropdown">
+                                <li><a class="navsub" href="about.html#days">活動日</a></li>
+                                <li><a class="navsub" href="about.html#location">活動場所</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-child">
+                            <a class="nav" href="#">ACTIVITIES</a>
+                            <ul class="dropdown">
+                                <li><a class="navsub" href="activity.html#competition">競技プログラミング</a></li>
+                                <li><a class="navsub" href="activity.html#production">Webサイト制作</a></li>
+                                <li><a class="navsub" href="activity.html#puzzle">パズルゲーム</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-child">
+                            <a class="nav" href="#">EVENTS</a>
+                            <ul class="dropdown">
+                                <li><a class="navsub" href="event.html#persocom_class">小学生パソコン教室</a></li>
+                                <li><a class="navsub" href="event.html#scratch">1年生スクラッチ発表会</a></li>
+                                <li><a class="navsub" href="event.html#u-15">プログラミング体験会</a></li>
+                                <li><a class="navsub" href="event.html#school-fes">学校開放長工祭</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div> -->
+                <div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+                    <ul>
+                        <li><a class="nav" href="#">TOP</a></li>
+                        <li><a class="nav" href="about.html">ABOUT</a></li>
+                        <li><a class="navsub" href="about.html#certification">検定資格取得状況</a></li>
+                        <li><a class="navsub" href="about.html#days">活動日</a></li>
+                        <li><a class="navsub" href="about.html#location">活動場所</a></li>
+                        <li><a class="nav" href="activity.html">ACTIVITIES</a></li>
+                        <li><a class="navsub" href="activity.html#competition">競技プログラミング</a></li>
+                        <li><a class="navsub" href="activity.html#production">制作物</a></li>
+                        <li><a class="nav" href="event.html">EVENTS</a></li>
+                        <li><a class="navsub" href="event.html#persocom_class">小学生パソコン教室</a></li>
+                        <li><a class="navsub" href="event.html#scratch">1年生スクラッチ発表会</a></li>
+                        <li><a class="navsub" href="event.html#u-15">プログラミング体験会</a></li>
+                        <li><a class="navsub" href="event.html#school-fes">学校開放長工祭</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="contitle">
+                <h1>
+                    COMPUTER SCIENCE CLUB
+                    <br>
+                    <span style="font-size: 30%; font-weight: 400; line-height: 0px;">
+                        このサイトは確認中のため検索サイトの結果に表示されないよう設定していますが、完全に非表示を保証するものではありません。<br>
+                        確認が完了次第、この設定を解除し、正式に公開いたします。
+                    </span>
+                </h1>
+            </div>
+            <div class="scrolldown1"><span>Scroll</span></div>
+            <div class="area">
+                <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="white_section" id="activity">
+                <h2><a href="about.html"><span class="bgextend bgLRextendTrigger"><span
+                                class="bgappearTrigger">ABOUT</span></span></a></h2>
+                <p class="big_fontsize">
+                    <span class="slide-in leftAnime">
+                        <span class="slide-in_inner leftAnimeInner">
+                            情報班についての説明、強み、班員の検定資格取得状況、活動日、活動場所についてまとめました。<br>
+                        </span>
+                    </span>
+                </p>
+                <span class="slide-in leftAnime">
+                    <span class="slide-in_inner leftAnimeInner">
+                        <div id="html-part" class="link-card-wrapper">
+                            <a class="link-card" href="about.html">
+                                <div class="link-card-content">
+                                    <div class="link-card-image" id="grid-content-1">
+                                        <img class="pc_display" id="thumbnail-image-code" src="images/johoclub_ogp.png">
+                                        <img class="sp_display" id="thumbnail-image-code" src="johoclub_ogp.png">
+                                    </div>
+                                    <div class="link-card-text" id="grid-content-2">
+                                        <p class="link-card-title">情報工学班について｜長野工業高等学校 情報工学班</p>
+                                    </div>
+                                    <div id="grid-content-3">
+                                        <p class="link-card-description">
+                                            情報班についての説明、強み、検定資格取得状況、活動日、活動場所についてまとめています。緩いけど活動はしっかりやる雰囲気を感じてもらい、情報班に入班してくれるとうれしいです。<br><br>情報工学班への入班お待ちしています<i>!!</i>
+                                        </p>
+                                        <div class="link-card-domain">
+                                            <p>about.html</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </span>
+                </span>
+                <br>
+                <p class="big_fontsize">
+                    <span class="slide-in leftAnime">
+                        <span class="slide-in_inner leftAnimeInner">
+                            新入生はこちらもご確認ください！<wbr>
+                            <a href="about.html?trial" style="display: none;">班活体験について</a><br>
+                        </span>
+                    </span>
+                </p>
+                <span class="slide-in leftAnime">
+                    <span class="slide-in_inner leftAnimeInner">
+                        <div id="html-part" class="link-card-wrapper">
+                            <a class="link-card" href="welcome_ai.html">
+                                <div class="link-card-content">
+                                    <div class="link-card-image" id="grid-content-1">
+                                        <img class="pc_display" id="thumbnail-image-code" src="images/johoclub_ogp.png">
+                                        <img class="sp_display" id="thumbnail-image-code" src="johoclub_ogp.png">
+                                    </div>
+                                    <div class="link-card-text" id="grid-content-2">
+                                        <p class="link-card-title">ようこそ！情報工学班へ！｜長野工業高等学校 情報工学班</p>
+                                    </div>
+                                    <div id="grid-content-3">
+                                        <p class="link-card-description">
+                                            「今話題の会話系生成AI」にこのページを読み込ませて情報班の全てをまとめてもらいました！<br>情報班ってどんなところなの？、班内の雰囲気ってどんな感じ？、情報班に入ったらどんなことができるの？魅力は？など様々な質問に生成AIが回答しています！<br>文章を読んで使った生成AIを当ててみてください！班活動見学時に答え合わせしましょう！<wbr>&nbsp;
+                                            <nobr>by&nbsp;ホームページ制作担当班員</nobr>
+                                            <br><br>情報工学班への入班お待ちしています<i>!!</i>
+                                        </p>
+                                        <div class="link-card-domain">
+                                            <p>welcome_ai.html</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </span>
+                </span>
+                <br><br>
+                <p>
+                    <span class="slide-in leftAnime">
+                        <span class="slide-in_inner leftAnimeInner">
+                            <div class="pc_display">
+                                サイト内リンク<br>
+                                <span class="select-none">・&nbsp;</span><a
+                                    href="activity.html">活動内容｜長野工業高等学校&nbsp;情報工学班</a><br>
+                                <span class="select-none">・&nbsp;</span><a
+                                    href="event.html">外部活動の支援、班内特別活動｜長野工業高等学校&nbsp;情報工学班</a><br>
+                                <span class="select-none">・&nbsp;</span><a
+                                    href="about.html#certification">検定資格取得状況｜長野工業高等学校&nbsp;情報工学班</a><br>
+                                <!-- <span class="select-none">・&nbsp;</span><a href="diary/index.html">長工情報班絵日記｜情報班の緩すぎる部分</a><br> -->
+                                <!-- <span class="select-none">・&nbsp;</span><a
+                                    href="403.html">長工情報班絵日記｜情報班の緩すぎる部分</a><br><br> -->
+                            </div>
+                            外部リンク<br>
+                            <span class="select-none">・&nbsp;</span>
+                            <a href="https://www.nagano-c.ed.jp/choko/"
+                                target="_blank"
+                                rel="nofollow">長野県長野工業高等学校（https://www.nagano-c.ed.jp/choko/）</a><br>
+                            <span class="select-none">・&nbsp;</span>
+                            <a href="https://www.nagano-c.ed.jp/choko/index.php/school-life/club/jouhouhan/"
+                                target="_blank"
+                                rel="nofollow">情報工学班&nbsp;-&nbsp;長野県長野工業高等学校（https://www.nagano-c.ed.jp/choko/）</a><br>
+                        </span>
+                    </span>
+                </p>
+            </div>
+            <div class="black_section" id="activity">
+                <h2><a href="activity.html"><span class="bgextend bgLRextendTrigger"><span
+                                class="bgappearTrigger">ACTIVITIES</span></span></a></h2>
+                <p class="big_fontsize">
+                    <span class="slide-in leftAnime">
+                        <span class="slide-in_inner leftAnimeInner">
+                            情報工学班ではこのような活動をしています。詳細は画像をクリック<i>！</i>
+                        </span></span>
+                </p>
+                <ul class="slider box fadeUpTrigger">
+                    <li>
+                        <a class="black_section_link" href="activity.html#web" style="text-decoration: none;">
+                            <img src="images/web_html_css_js.png" alt="Webサイト制作(html)">
+                            <div class="slider_txt">
+                                <p>
+                                    HTML,&nbsp;CSS,&nbsp;JavaScriptで情報工学班のホームページを制作しています。
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="black_section_link" href="activity.html#unity" style="text-decoration: none;">
+                            <img src="images/unity.jpg" alt="Unity ゲーム制作">
+                            <div class="slider_txt">
+                                <p>
+                                    インターネット上のUnityの学習サイトを見ながら学習しています。
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="black_section_link" href="activity.html#blender" style="text-decoration: none;">
+                            <img src="images/blender.jpg" alt="Blender 3Dモデル制作">
+                            <div class="slider_txt">
+                                <p>
+                                    Blenderで3Dモデルを作成しています。
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="black_section_link" href="activity.html#puzzle" style="text-decoration: none;">
+                            <img src="images/puzzle.png" alt="パズルゲーム">
+                            <div class="slider_txt">
+                                <p>
+                                    PythonやTKinterを使用してパズルゲームを作りました。
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="black_section_link" href="activity.html#joi" style="text-decoration: none;">
+                            <img src="images/joi_py.png" alt="情報オリンピック(Python)">
+                            <div class="slider_txt">
+                                <p>
+                                    情報オリンピックなどの競技プログラミングコンテストに参加しています。
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="black_section_link" href="activity.html#premierepro" style="text-decoration: none;">
+                            <img src="images/premierepro.png" alt="PremierePro動画制作">
+                            <div class="slider_txt">
+                                <p>
+                                    Premiere&nbsp;Proで動画制作をしています。
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <!-- <li><img src="images/joho_boshu.png" alt="班員募集"></li> -->
+                </ul>
+            </div>
+            <div class="white_section" id="event">
+                <h2><a href="event.html">
+                        <span class="bgextend bgLRextendTrigger">
+                            <span class="bgappearTrigger">EVENTS</span></span></a></h2>
+                <p class="big_fontsize">
+                    <span class="slide-in leftAnime">
+                        <span class="slide-in_inner leftAnimeInner">
+                            情報工学班ではこのような外部活動の支援、班内特別活動を行っています。詳細は画像をクリック<i>！</i>
+                        </span></span>
+                </p>
+                <ul class="slider2 box fadeUpTrigger">
+                    <li>
+                        <a class="white_section_link" href="event.html#persocom_class" style="text-decoration: none;">
+                            <img class="slider2_img" src="images/persocom_class_2022_basic_course.png" alt="小学生パソコン教室">
+                            <div class="slider2_txt">
+                                <p>
+                                    夏休みに小学生を対象にしたパソコン教室を開催しました。
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="white_section_link" href="event.html#school-fes" style="text-decoration: none;">
+                            <img class="slider2_img"
+                                src="https://pp-various.pages.dev/contents/2024/choko_festival/do.png" alt="学校開放長工祭">
+                            <div class="slider2_txt">
+                                <p>
+                                    学校開放&nbsp;長工祭ではオリジナルハンコ作り、オリジナルTシャツプリント、作品の展示を行いました。
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="white_section_link" href="event.html#u-15" style="text-decoration: none;">
+                            <img class="slider2_img" src="images/u-15_2022.png" alt="U-15">
+                            <div class="slider2_txt">
+                                <p>
+                                    産業フェアin信州の中で行われたプログラミングゲーム体験会を講師として参加しました。
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="white_section_link" href="event.html#scratch" style="text-decoration: none;">
+                            <img class="slider2_img" src="images/scratch.png" alt="一年生スクラッチ発表会">
+                            <div class="slider2_txt">
+                                <p>
+                                    1年生がゲームなどの制作を行いました。その後、発表会を行いました。
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <p id="page-top">
+                    <a href="#">
+                        <span class="material-symbols-outlined">
+                            keyboard_double_arrow_up
+                        </span>
+                    </a>
+                </p>
+            </div>
+        </main>
+        <footer id="footer">
+            <a class="chokologobox imglink" href="https://www.nagano-c.ed.jp/choko/" target="_blank" rel="nofollow">
+                <img class="chokologo" src="https://www.nagano-c.ed.jp/choko/wp-content/uploads/2019/04/logo-1.png">
+            </a>
+            <div class="kawaiiLogo">
+                <a class="kawaiiLogo_txt" href="https://github.com/SAWARATSUKI/KawaiiLogos" target="_blank" rel="nofollow">
+                    Kawaii Logo Made by SAWARATSUKI.
+                </a>
+            </div>
+            <p class="copyright">&copy; 2024-2025 Choko Computer Science Club.</p>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="javascript/script.js"></script>
+    <script src="javascript/gallery.js"></script>
+    <script src="javascript/loading.js"></script>
+    <script src="javascript/menu.js"></script>
+</body>
+
+</html>
