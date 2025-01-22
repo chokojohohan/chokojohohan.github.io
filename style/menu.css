@@ -235,18 +235,18 @@
 }
 /* TODO:ドロップダウンメニュー対応化 */
 /* -> 画面の縦幅に応じて内容の表示を変えるという手段に出る */
-@media screen and (max-height: 870px) {
+/* @media screen and (max-height: 870px) {
+    #g-nav ul {
+        top: 65%;
+    }
+} */
+
+/* @media screen and (max-height: 780px) {
     #g-nav ul {
         top: 65%;
     }
 }
-
-@media screen and (max-height: 780px) {
-    #g-nav ul {
-        top: 65%;
-    }
-}
-
+ */
 @media screen and (max-height: 665px) {
     #g-nav ul {
         top: 50%;
