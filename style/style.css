@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto+Mono:ital,wght@0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.material-symbols-outlined {
+    font-size: 40px;
+}
+
+
+body {
+    background-color: #bfeaeb00;
+    font-family: "Noto Sans JP", sans-serif;
+    cursor: default;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #ffffff5c;
+    backdrop-filter: blur(7px);
+    z-index: 100001;
+}
+
+.headerlogo {
+    height: 60px;
+    padding: 10px;
+    filter: drop-shadow(0 0 3px white);
+    user-select: none;
+}
+
+#header {
+    position: fixed;
+    top: -80px;
+    /* ヘッダーの高さ分上に移動 */
+    left: 0;
+    width: 100%;
+    transition: top 0.3s ease-in-out;
+    /* スムーズな表示/非表示のアニメーション */
+}
+
+#header_n {
+    position: fixed;
+    top: 0;
+    /* ヘッダーの高さ分上に移動 */
+    left: 0;
+    width: 100%;
+    /* transition: top 0.3s ease-in-out; */
+    /* スムーズな表示/非表示のアニメーション */
+    z-index: 99;
+}
+
+img {
+    pointer-events: none;
+}
+
+.white_section h2 {
+    padding: 0.2em 0.5em;
+    /*上下 左右の余白*/
+    color: #000000;
+    /*文字色*/
+    background: transparent;
+    /*背景透明に*/
+    border-left: solid 5px #4472c4;
+    /*左線*/
+    font-size: 200%;
+}
+
+.black_section h2 {
+    padding: 0.2em 0.5em;
+    /*上下 左右の余白*/
+    color: #ffffff;
+    /*文字色*/
+    background: transparent;
+    /*背景透明に*/
+    border-left: solid 5px #4472c4;
+    /*左線*/
+    font-size: 200%;
+}
+
+.white_section {
+    /* z-index: 99; */
+    background-color: #ffffff;
+    padding: 100px;
+    color: #000000;
+}
+
+.black_section {
+    /* z-index: 99; */
+    background-color: #000000;
+    padding: 100px;
+    color: #ffffff;
+}
+
+/* #footer {
+    padding: 100px;
+} */
+
+footer {
+    border-top: thick double #000000;
+    background-color: white;
+    bottom: 0;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+.chokologobox {
+    display: block;
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 20px;
+    float: left;
+}
+
+.chokologo {
+    width: 200px;
+}
+
+.kawaiiLogo {
+    display: block;
+    text-align: right;
+    margin-right: 50px;
+    margin-top: 24px;
+    float: right;
+}
+
+.kawaiiLogo_txt {
+    color: #000000;
+    text-decoration: none;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 80%;
+    height: 70px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.activity_img {
+    width: 500px;
+    padding: 10px;
+    border-radius: 13px;
+}
+
+.explain {
+    padding: 10px;
+    font-size: 120%;
+}
+
+.activity_img video {
+    width: 500px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.imglink {
+    display: inline-block;
+    width: fit-content;
+}
+
+a.zoom {
+    cursor: zoom-in;
+}
+
+a.imglink img {
+    display: block;
+}
+
+.scratch_img {
+    width: 300px;
+    border-radius: 13px;
+}
+
+.white_section a {
+    text-decoration: underline;
+    color: #000000;
+}
+
+.black_section a {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.white_section h2 a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.black_section h2 a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.big_fontsize {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 130%;
+}
+
+/*== 外の線が伸びる */
+
+.black_section_link {
+    border-radius: 4px;
+    /*線の基点とするためrelativeを指定*/
+    position: relative;
+    /*ボタンの形状*/
+    color: #fff;
+    border: 1px solid #ffffffc5;
+    padding: 1px;
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+    /*アニメーションの指定*/
+    transition: all 0.3s ease-in-out;
+    margin: 10px 0px 10px 0px;
+}
+
+/*hoverした際の背景の形状*/
+.black_section_link:hover {
+    /* background:#acacacac; */
+    color: #fff;
+    border-color: transparent;
+}
+
+/*線の設定*/
+.black_section_link::before,
+.black_section_link::after {
+    content: '';
+    /*絶対配置で線の位置を決める*/
+    position: absolute;
+    border: solid #fff;
+    width: 10px;
+    height: 10px;
+    /*アニメーションの指定*/
+    transition: all 0.3s ease-in-out;
+}
+
+/*線の位置と形状*/
+.black_section_link::before {
+    top: -6px;
+    left: -6px;
+    border-width: 1px 0 0 1px;
+    border-radius: 2px;
+}
+
+/*線の位置と形状*/
+.black_section_link::after {
+    bottom: -6px;
+    right: -6px;
+    border-width: 0 1px 1px 0;
+    border-radius: 2px;
+}
+
+/*hoverした際の線の形状*/
+.black_section_link:hover::before,
+.black_section_link:hover::after {
+    width: calc(100% + 11px);
+    height: calc(100% + 11px);
+    border-color: #fff;
+    border-radius: 2px;
+}
+
+.white_section_link {
+    border-radius: 4px;
+    /*線の基点とするためrelativeを指定*/
+    position: relative;
+    /*ボタンの形状*/
+    color: #000;
+    border: 1px solid #0000008d;
+    padding: 1px;
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+    /*アニメーションの指定*/
+    transition: all 0.3s ease-in-out;
+    margin: 10px 0px 10px 0px;
+}
+
+/*hoverした際の背景の形状*/
+.white_section_link:hover {
+    /* background:#acacacac; */
+    color: #000;
+    border-color: transparent;
+}
+
+/*線の設定*/
+.white_section_link::before,
+.white_section_link::after {
+    content: '';
+    /*絶対配置で線の位置を決める*/
+    position: absolute;
+    border: solid #000;
+    width: 10px;
+    height: 10px;
+    /*アニメーションの指定*/
+    transition: all 0.3s ease-in-out;
+}
+
+/*線の位置と形状*/
+.white_section_link::before {
+    top: -6px;
+    left: -6px;
+    border-width: 1px 0 0 1px;
+    border-radius: 2px;
+}
+
+/*線の位置と形状*/
+.white_section_link::after {
+    bottom: -6px;
+    right: -6px;
+    border-width: 0 1px 1px 0;
+    border-radius: 2px;
+}
+
+/*hoverした際の線の形状*/
+.white_section_link:hover::before,
+.white_section_link:hover::after {
+    width: calc(100% + 11px);
+    height: calc(100% + 11px);
+    border-color: #000;
+    border-radius: 2px;
+}
+
+#page-top a {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+    color: #ffffff;
+    z-index: 2;
+}
+
+#page-top {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: 2;
+    background-color: #5996ffa9;
+    backdrop-filter: blur(2px);
+    border-radius: 50px;
+    /*はじめは非表示*/
+    opacity: 0;
+    transform: translateX(100px);
+    transition: .3s ease-out;
+}
+
+#page-top .material-symbols-outlined {
+    font-size: 40px;
+}
+
+#page-top:hover {
+    background-color: #5584d4;
+    backdrop-filter: blur(2px);
+    transition: .3s ease-in-out;
+}
+
+/* 上に上がる動き */
+
+#page-top.UpMove {
+    animation: UpAnime 0.5s forwards;
+}
+
+@keyframes UpAnime {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 下に下がる動き */
+
+#page-top.DownMove {
+    animation: DownAnime 0.5s forwards;
+}
+
+@keyframes DownAnime {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(100px);
+    }
+}
+
+/*角丸に変わる*/
+
+.btnchangeradius {
+    /*ボタンの形状*/
+    display: inline-block;
+    padding: 10px 20px;
+    border: 5px double white;
+    text-decoration: none;
+    outline: none;
+    /*アニメーションの指定*/
+}
+
+/*hoverした際の角丸のアニメーション*/
+.btnchangeradius:hover {
+    background: #666;
+    border-radius: 20px;
+}
+
+.has-child {
+    cursor: pointer;
+}
+
+.select-none {
+    user-select: none;
+}
+
+.white_section_link,
+.black_section_link {
+    text-decoration: none;
+}
+
+.pc_display {
+    display: block;
+}
+
+.sp_display {
+    display: none;
+}
+
+@media screen and (max-width: 640px) {
+    .pc_display {
+        display: none;
+    }
+
+    .sp_display {
+        display: block;
+    }
+}

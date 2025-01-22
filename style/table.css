@@ -1,0 +1,43 @@
+table {
+    width: 80vw;
+    border-collapse: collapse;
+    border: 2px solid #8c8c8c;
+    font-family: "Noto Sans JP",sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+caption {
+    caption-side: bottom;
+    padding: 10px;
+    font-weight: bold;
+}
+
+thead,
+tfoot {
+    background-color: #5996ff38;
+}
+
+th,
+td {
+    border: 1px solid #a0a0a0;
+    padding: 10px 10px;
+    text-align: center
+}
+
+td:last-of-type {
+    text-align: center;
+}
+
+tbody>tr:nth-of-type(even) {
+    background-color: #edeef2;
+}
+
+tfoot th {
+    text-align: center;
+}
+
+tfoot td {
+    font-weight: bold;
+    text-align: center;
+}

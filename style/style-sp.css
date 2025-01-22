@@ -1,0 +1,79 @@
+@media screen and (max-width:750px) {
+
+    /*　画面サイズが750px以下の場合ここの記述が適用される　*/
+
+    .contitle {
+        top: 38vh;
+    }
+
+    .white_section {
+        padding: 30px;
+        margin-top: 20px;
+    }
+
+    .slider img {
+        width: 62vw;
+    }
+
+    .slider_txt {
+        width: 50vw;
+    }
+
+    .black_section {
+        padding: 50px 30px 30px 30px;
+        margin-top: 0px;
+    }
+
+    .chokologobox {
+        text-align: center;
+        margin-left: auto;
+        margin-top: 0px;
+        float: none;
+    }
+
+    .kawaiiLogo {
+        text-align: center;
+        margin-right: auto;
+        margin-top: 0px;
+        float: none;
+    }
+
+    .copyright {
+        margin-top: 5px;
+        margin-top: 0px;
+    }
+
+    /*activities*/
+    #splash {
+        margin: 0;
+        margin-top: 0px;
+    }
+
+    .activity_img {
+        width: 70%;
+    }
+
+    .style-sp {
+        margin-top: 60px;
+    }
+
+    #g-nav ul {
+        width: 300px;
+    }
+
+    .nav:hover::before {
+        width: 330px;
+    }
+
+    /* .navsub:hover::before {
+        width: 300px;
+    } */
+
+    #g-nav li a.navsub {
+        display: none;
+    }
+
+    body::-webkit-scrollbar {
+        display: block;
+    }
+}

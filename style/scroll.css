@@ -1,0 +1,258 @@
+@charset "utf-8";
+
+/*========= スクロールダウンのためのCSS ===============*/
+
+/*====== 9-1-1 縦線が動いてスクロールを促す =======*/
+
+/*スクロールダウン全体の場所*/
+.scrolldown1 {
+    /*描画位置※位置は適宜調整してください*/
+    position: absolute;
+    right: 50%;
+    bottom: 45px;
+    /*全体の高さ*/
+    height: 50px;
+    /* background-color: #4472c4; */
+    z-index: 999;
+}
+
+/*Scrollテキストの描写*/
+.scrolldown1 span {
+    /*描画位置*/
+    position: absolute;
+    left: -15px;
+    top: -15px;
+    /*テキストの形状*/
+    color: #eee;
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
+    user-select: none;
+}
+
+/* 線の描写 */
+.scrolldown1::after {
+    content: "";
+    /*描画位置*/
+    position: absolute;
+    top: 0;
+    /*線の形状*/
+    width: 1px;
+    height: 30px;
+    background: #eee;
+    /*線の動き1.4秒かけて動く。永遠にループ*/
+    animation: pathmove 1.4s ease-in-out infinite;
+    opacity: 0;
+}
+
+/*高さ・位置・透過が変化して線が上から下に動く*/
+@keyframes pathmove {
+    0% {
+        height: 0;
+        top: 0;
+        opacity: 0;
+    }
+
+    30% {
+        height: 30px;
+        opacity: 1;
+    }
+
+    100% {
+        height: 0;
+        top: 50px;
+        opacity: 0;
+    }
+}
+
+
+
+/*全共通*/
+
+.bgextend {
+    animation-name: bgextendAnimeBase;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    position: relative;
+    overflow: hidden;
+    /*　はみ出た色要素を隠す　*/
+    opacity: 0;
+}
+
+@keyframes bgextendAnimeBase {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/*中の要素*/
+.bgappear {
+    animation-name: bgextendAnimeSecond;
+    animation-duration: 1s;
+    animation-delay: 0.6s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes bgextendAnimeSecond {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*========= 流れるテキスト ===============*/
+
+/*全共通*/
+
+.slide-in {
+    overflow: hidden;
+    display: inline-block;
+}
+
+.slide-in_inner {
+    display: inline-block;
+
+}
+
+/*左右のアニメーション*/
+.leftAnime {
+    opacity: 0;
+    /*事前に透過0にして消しておく*/
+}
+
+.slideAnimeLeftRight {
+    animation-name: slideTextX100;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes slideTextX100 {
+    from {
+        transform: translateX(-100%);
+        /*要素を左の枠外に移動*/
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        /*要素を元の位置に移動*/
+        opacity: 1;
+    }
+}
+
+.slideAnimeRightLeft {
+    animation-name: slideTextX-100;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+
+@keyframes slideTextX-100 {
+    from {
+        transform: translateX(100%);
+        /*要素を右の枠外に移動*/
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        /*要素を元の位置に移動*/
+        opacity: 1;
+    }
+}
+
+/*左から右*/
+.white_section .bgLRextend::before {
+    animation-name: bgLRextendAnime;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    /*伸びる背景色の設定*/
+}
+
+.black_section .bgLRextend::before {
+    animation-name: bgLRextendAnime;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    /*伸びる背景色の設定*/
+}
+
+@keyframes bgLRextendAnime {
+    0% {
+        transform-origin: left;
+        transform: scaleX(0);
+    }
+
+    50% {
+        transform-origin: left;
+        transform: scaleX(1);
+    }
+
+    50.001% {
+        transform-origin: right;
+    }
+
+    100% {
+        transform-origin: right;
+        transform: scaleX(0);
+    }
+}
+
+/* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+.bgappearTrigger,
+.bgLRextendTrigger {
+    opacity: 0;
+}
+
+.fadeUpTrigger {
+    opacity: 0;
+}
+
+.fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body::-webkit-scrollbar{
+    width: 5px;
+    display: none;
+}
+body::-webkit-scrollbar-track{
+    background-color: #fff;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #4473c4;
+    /* border-radius: 10px; */
+}
