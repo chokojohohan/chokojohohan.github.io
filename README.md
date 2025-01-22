@@ -3,7 +3,7 @@
 - 旧ホームページは[こちら&nbsp;(chokojohohan.github.io/Computerscienceclub/home.html)](https://chokojohohan.github.io/Computerscienceclub/home.html)
 > このサイトは確認中のため検索サイトの結果に表示されないよう設定していますが、完全に非表示を保証するものではありません。
 > 確認が完了次第、この設定を解除し、正式に公開いたします。
-> また、刷新計画[2. ]（旧ホームページからリダイレクトするコードの追加）を実施します。
+> また、刷新計画[2. ]（旧ホームページに新ホームページへリダイレクトするコードの追加）を実施します。
 
 # 長野県長野工業高等学校
 - [ホームページ](https://www.nagano-c.ed.jp/choko/)
