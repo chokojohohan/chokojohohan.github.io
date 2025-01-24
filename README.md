@@ -1,5 +1,5 @@
 # 情報工学班のホームページ
-- 新ホームページは[こちら&nbsp;(chokojohohan.github.io)](https://chokojohohan.github.io/)  
+- 新ホームページは[こちら&nbsp;(chokojohohan.github.io/)](https://chokojohohan.github.io/)  
 - 旧ホームページは[こちら&nbsp;(chokojohohan.github.io/Computerscienceclub/home.html)](https://chokojohohan.github.io/Computerscienceclub/home.html)
 > このサイトは確認中のため検索サイトの結果に表示されないよう設定していますが、完全に非表示を保証するものではありません。
 > 確認が完了次第、この設定を解除し、正式に公開いたします。
