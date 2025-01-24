@@ -10,9 +10,11 @@
 2. 情報班のGitHubの"Computerscienceclub"リポジトリの1つ1つのHTMLファイルにchokojohohan.github.ioにリフレッシュするためのコードを加える。
 > "Computerscienceclub"リポジトリはパブリックのままで、GitHub Pagesも公開したままにする。ブックマーク等の影響で404になることを避けるため。
 
+---
+
 # 長野県長野工業高等学校
 - [ホームページ](https://www.nagano-c.ed.jp/choko/)
 - [情報工学班について](https://www.nagano-c.ed.jp/choko/index.php/school-life/club/jouhouhan/)
 
 ---
-<span style="text-align: center;">&copy; 2024-2025 Choko Computer Science Club.</span>
+&copy; 2024-2025 Choko Computer Science Club.
