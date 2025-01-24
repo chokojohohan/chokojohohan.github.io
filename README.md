@@ -15,6 +15,4 @@
 - [情報工学班について](https://www.nagano-c.ed.jp/choko/index.php/school-life/club/jouhouhan/)
 
 ---
-<div style="text-align: center;">
-&copy; 2024-2025 Choko Computer Science Club.
-</div>
+<span style="text-align: center;">&copy; 2024-2025 Choko Computer Science Club.</span>
