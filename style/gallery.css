@@ -12,7 +12,7 @@
     width: 50vw;
     /*スライダー内の画像を50vwにしてレスポンシブ化*/
     height: auto;
-    border-radius: 2px 2px 0px 0px;
+    border-radius: 2px 2px 0px 0px !important;
     margin: auto;
     display: block;
 }
@@ -22,7 +22,7 @@
     color: #fff;
     padding: 25px;
     text-decoration: none;
-    border-radius: 0px 0px 2px 2px;
+    border-radius: 0px 0px 2px 2px !important;
 }
 
 .slider .slick-slide {
@@ -122,7 +122,7 @@
 }
 
 .slider2_img {
-    border-radius: 2px 2px 0px 0px;
+    border-radius: 2px 2px 0px 0px !important;
 }
 
 .slider2_txt {
@@ -130,7 +130,7 @@
     color: #000;
     padding: 25px;
     text-decoration: none;
-    border-radius: 0px 0px 2px 2px;
+    border-radius: 0px 0px 2px 2px !important;
 }
 
 /*slickのJSで書かれるタグ内、スライド左右の余白調整*/
