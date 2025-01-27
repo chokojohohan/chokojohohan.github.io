@@ -17,4 +17,8 @@
 - [情報工学班について](https://www.nagano-c.ed.jp/choko/index.php/school-life/club/jouhouhan/)
 
 ---
+
+> [!CAUTION]
+> 長野工業高等学校情報工学班員等の関係者以外は、このリポジトリを編集したり、フォークすることはやめてください。
+
 &copy; 2024-2025 Choko Computer Science Club.
