@@ -1,0 +1,80 @@
+/*inputを非表示 & 閉じた時の位置調整*/
+.open-box {
+    position: relative;
+}
+
+input[type="checkbox"].on-off {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    opacity: 0;
+}
+
+/*ラベル（「開く」ボタン）*/
+.open-label {
+    margin: 0 1.5em;
+    padding: 0.8em;
+    display: block;
+    color: #fff;
+    /* font-weight: bold; */
+    text-align: center;
+    /* box-shadow: 0 2px 0 2px #aaa; */
+    background: #4472c4;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: 30px;
+}
+
+/*ボタンっぽい効果*/
+/* .open-label:active {
+    box-shadow: 0 0 0 0;
+} */
+.open-label:hover {
+    /* background: -webkit-linear-gradient(bottom, #4472c4 1%, #4472c4 80%); */
+    background: #4472c4;
+} 
+
+/*ラベルに表示するテキスト*/
+.open-label::after {
+    content: 'タップで開く';
+}
+
+.on-off:checked~.open-label::after {
+    content: 'タップで閉じる';
+}
+
+/*開閉エリア*/
+.open {
+    padding: 1em;
+    border-radius: 8px;
+    height: 400px;
+    /*ちらっと見える部分の高さ*/
+    overflow: hidden;
+    transition: .5s;
+    position: relative;
+}
+
+.on-off:checked~.open {
+    padding: 1.5em 1em;
+    height: auto;
+}
+
+/*開閉エリアにぼかしを乗せる*/
+.open::before {
+    content: '';
+    background: linear-gradient(to bottom, transparent, #ffffff 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+/*開いたらぼかしを消す*/
+.on-off:checked~.open::before {
+    background: none;
+    z-index: -1;
+}
