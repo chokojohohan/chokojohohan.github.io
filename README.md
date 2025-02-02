@@ -14,6 +14,17 @@
 - [ ] 情報班のGitHubの"Computerscienceclub"リポジトリの1つ1つのHTMLファイルに対応するchokojohohan.github.ioにリフレッシュするためのコードを加える。
 > "Computerscienceclub"リポジトリはパブリックのままで、GitHub Pagesも公開したままにする。ブックマーク等の影響で404になることを避けるため。
 
+<!-- |ファイル名|追加内容|
+|:---:|:---|
+|home.html|`<meta http-equiv="refresh" content="0; url=https://chokojohohan.github.io/" />`|
+|other.html|`<meta http-equiv="refresh" content="0; url=https://chokojohohan.github.io/activity.html#web" />`|
+|pcclass1.html|`<meta http-equiv="refresh" content="0; url=https://chokojohohan.github.io/event.html#persocom_class" />`|
+|python.html|`<meta http-equiv="refresh" content="0; url=https://chokojohohan.github.io/activity.html#puzzle" />`|
+|sangyofea2022.html|`<meta http-equiv="refresh" content="0; url=https://chokojohohan.github.io/activity.html#puzzle" />`|
+|suc1.html|`<meta http-equiv="refresh" content="0; url=https://chokojohohan.github.io/event.html#scratch" />`|
+|syougakusei.html|`<meta http-equiv="refresh" content="0; url=https://chokojohohan.github.io/event.html#persocom_class" />`|
+|u15p1.html|`<meta http-equiv="refresh" content="0; url=https://chokojohohan.github.io/event.html#u-15" />`| -->
+
 ---
 
 ## 情報工学班ホームページ運営方針について
