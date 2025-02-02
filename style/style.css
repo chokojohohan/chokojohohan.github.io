@@ -441,13 +441,23 @@ a.imglink img {
     display: block;
 }
 
-.sp_display {
+.pc_inline {
+    display: inline;
+}
+
+.sp_display,
+.sp_inline {
     display: none;
 }
 
 @media screen and (max-width: 640px) {
-    .pc_display {
+    .pc_display,
+    .pc_inline {
         display: none;
+    }
+
+    .sp_inline {
+        display: inline;
     }
 
     .sp_display {
