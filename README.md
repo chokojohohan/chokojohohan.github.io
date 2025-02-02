@@ -11,7 +11,7 @@
 ---
 ### 情報班ホームページ刷新計画（URLの短縮・更新）
 - [x] <s>情報班のGitHubに"chokojohohan.github.io"というパブリックリポジトリを作成し、現在制作中の新ホームページのソースコードを追加する。</s>
-- [ ] 情報班のGitHubの"Computerscienceclub"リポジトリの1つ1つのHTMLファイルにchokojohohan.github.ioにリフレッシュするためのコードを加える。
+- [ ] 情報班のGitHubの"Computerscienceclub"リポジトリの1つ1つのHTMLファイルに対応するchokojohohan.github.ioにリフレッシュするためのコードを加える。
 > "Computerscienceclub"リポジトリはパブリックのままで、GitHub Pagesも公開したままにする。ブックマーク等の影響で404になることを避けるため。
 
 ---
@@ -29,6 +29,23 @@
   - 情報工学に興味がある方はもちろん、少しでも「面白そうだな」と感じたら、ぜひ一度情報工学班の活動を見学に来てください。
   - 私たちと一緒に、情報工学の面白さを体験しましょう！ 皆さんの入班を心よりお待ちしています！
 
+### 生成AIの利用について
+当ホームページは、開発に生成AI（Gemini, Claude, ChatGPTなど）を活用しています。  
+生成AIが生成した文章をそのまま使用している箇所もございますが、ハルシネーション[^1]がないよう、ヒューマンインザループ[^2]を行っております。  
+生成AIの力を借りながら、正確で質の高い情報をお届けできるよう努めています。
+
+---
+## サイトを共有
+- ホームページ
+  ```txt
+  https://chokojohohan.github.io/
+  ```
+- QRコード  
+  ![QR_Code](https://chokojohohan.github.io/qr_code.png "QR Code")
+  ```txt
+  https://chokojohohan.github.io/qr_code.png
+  ```
+
 ---
 
 # 長野県長野工業高等学校
@@ -36,5 +53,9 @@
 - [情報工学班について](https://www.nagano-c.ed.jp/choko/index.php/school-life/club/jouhouhan/ "情報工学班 – 長野県長野工業高等学校")
 
 ___
+
+[^1]: ハルシネーションとは、生成AIがもっともらしい嘘や誤った情報を生成してしまう現象のことです。事実に基づかない内容が含まれる可能性があります。
+[^2]: ヒューマンインザループとは、生成AIの生成物を人間が確認・修正する工程のことです。AIの生成する誤り（ハルシネーションなど）を防ぎ、品質を担保するために設けています。
+
 ___
 &copy; 2024-2025 Choko Computer Science Club.
