@@ -66,13 +66,13 @@
 |日付|内容|
 |:---:|:---|
 |<nobr>**2024年**</nobr>||
-|<nobr>05月03日</nobr>|ホームページ制作を開始する。（@PP-Pixel/private）|
+|<nobr>05月03日</nobr>|ホームページ制作を開始する。（@PP-Various/private）|
 |<nobr>05月04日</nobr>|現在のホームページの原型が完成。以降、個人的に開発を進める。|
 |<nobr>11月25日</nobr>|情報工学班のホームページ制作が正式に班の活動になる。|
-|<nobr>11月27日</nobr>|リポジトリを移動し、開発を進める。（@PP-Pixel/johoclub）|
+|<nobr>11月27日</nobr>|リポジトリを移動し、開発を進める。（@PP-Various/johoclub）|
 |<nobr>**2025年**</nobr>||
 |<nobr>01月17日</nobr>|公開するリポジトリを作成する。（@chokojohohan/chokojohohan.github.io）|
-|<nobr>01月22日</nobr>|開発環境から本番環境へのソースコードの移動するためにリリースする。（@PP-Pixel/johoclub/releases）|
+|<nobr>01月22日</nobr>|開発環境から本番環境へのソースコードの移動するためにリリースする。（@PP-Various/johoclub/releases）|
 |<nobr>01月22日</nobr>|GitHub Pagesで公開するリポジトリにソースコードを追加する。（@chokojohohan/chokojohohan.github.io）|
 |<nobr>01月22日</nobr>|GitHub Pagesで公開を開始する。<br>学校側の確認作業が終了するまで検索結果に表示されないようにするために`robot`を`noindex`に設定する。|
 |<nobr>01月29日</nobr>|ホームページの概要に「当ホームページの運営方針」を追記する。|
