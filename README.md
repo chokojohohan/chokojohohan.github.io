@@ -1,12 +1,21 @@
-# 情報工学班のホームページ
-- 新ホームページは[こちら&nbsp;(chokojohohan.github.io/)](https://chokojohohan.github.io/ "ホーム｜長野工業高等学校情報工学班")  
-- 旧ホームページは[こちら&nbsp;(chokojohohan.github.io/Computerscienceclub/home.html)](https://chokojohohan.github.io/Computerscienceclub/home.html "ホーム｜長野工業高等学校情報工学班(旧)")
-> このサイトは確認中のため検索サイトの結果に表示されないよう設定していますが、完全に非表示を保証するものではありません。
-> 確認が完了次第、この設定を解除し、正式に公開いたします。
-> また、刷新計画[2. ]（旧ホームページに新ホームページへリダイレクトするコードの追加）を実施します。
+<head>
+  <meta charset="utf-8">
+  <title>当ホームページの概要｜長野県長野工業高等学校 情報工学班</title>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+</head>
 
 > [!CAUTION]
 > 長野工業高等学校情報工学班員等の関係者以外は、このリポジトリの編集やフォーク等を禁止します。
+
+<img src="https://chokojohohan.github.io/logo_w.svg" alt="QR Code" width="35%" height="auto" style="display:block;margin:0 auto;margin-bottom:20px">
+
+# 当ホームページの概要
+## 現在の状況
+- 新ホームページは[こちら&nbsp;(chokojohohan.github.io/)](https://chokojohohan.github.io/ "ホーム｜長野工業高等学校情報工学班")  
+- 旧ホームページは[こちら&nbsp;(chokojohohan.github.io/Computerscienceclub/home.html)](https://chokojohohan.github.io/Computerscienceclub/home.html "ホーム｜長野工業高等学校情報工学班(旧)")
+> 当ホームページは確認中のため検索サイトの結果に表示されないよう設定していますが、完全に非表示を保証するものではありません。
+> 確認が完了次第、この設定を解除し、正式に公開いたします。
+> また、刷新計画[2. ]（旧ホームページに新ホームページへリダイレクトするコードの追加）を実施します。
 
 ---
 ### 情報班ホームページ刷新計画（URLの短縮・更新）
@@ -27,8 +36,8 @@
 
 ---
 
-## 情報工学班ホームページ運営方針について
-このホームページは、長野工業高等学校 情報工学班の活動や魅力を発信し、より多くの方に情報工学班を知っていただくことを目的として運営しています。<br>
+## 当ホームページ運営方針について
+当ホームページは、長野工業高等学校 情報工学班の活動や魅力を発信し、より多くの方に情報工学班を知っていただくことを目的として運営しています。<br>
 
 - 更新について
   - 常に最新の情報を提供できるよう、定期的な更新を心がけます。
@@ -51,6 +60,25 @@
 [^2]: ヒューマンインザループとは、生成AIの生成物を人間が確認・修正する工程のことです。AIの生成する誤り（ハルシネーションなど）を防ぎ、品質を担保するために設けています。
 
 ---
+
+## 開発記録
+|日付|内容|
+|:---:|:---|
+|<nobr>**2024年**</nobr>||
+|<nobr>05月03日</nobr>|ホームページ制作を開始する。（@PP-Pixel/private）|
+|<nobr>05月04日</nobr>|現在のホームページの原型が完成。以降、個人的に開発を進める。|
+|<nobr>11月25日</nobr>|情報工学班のホームページ制作が正式に班の活動になる。|
+|<nobr>11月27日</nobr>|リポジトリを移動し、開発を進める。（@PP-Pixel/johoclub）|
+|<nobr>**2025年**</nobr>||
+|<nobr>01月17日</nobr>|公開するリポジトリを作成する。（@chokojohohan/chokojohohan.github.io）|
+|<nobr>01月22日</nobr>|開発環境から本番環境へのソースコードの移動するためにリリースする。（@PP-Pixel/johoclub/releases）|
+|<nobr>01月22日</nobr>|GitHub Pagesで公開するリポジトリにソースコードを追加する。（@chokojohohan/chokojohohan.github.io）|
+|<nobr>01月22日</nobr>|GitHub Pagesで公開を開始する。<br>学校側の確認作業が終了するまで検索結果に表示されないようにするために`robot`を`noindex`に設定する。|
+|<nobr>01月29日</nobr>|ホームページの概要に「当ホームページの運営方針」を追記する。|
+|<nobr>02月02日</nobr>|ホームページの概要に「当ホームページ開発での生成AIの利用について」を追記する。|
+|<nobr>02月03日</nobr>|情報工学班員と顧問の先生向けにホームページの紹介をする。|
+
+---
 ## サイトを共有
 - ホームページ
   ```txt
@@ -64,10 +92,12 @@
 
 ---
 
+<span style="display:block;text-align:center;font-family:'Audiowide',sans-serif;font-size:110%;">
+  © 2024-2025 Choko Computer Science Club.
+</span>
+
+---
+
 # 長野県長野工業高等学校
 - [ホームページ](https://www.nagano-c.ed.jp/choko/ "長野県長野工業高等学校 – ようこそ！長野工業高等学校WEBサイトへ")
 - [情報工学班について](https://www.nagano-c.ed.jp/choko/index.php/school-life/club/jouhouhan/ "情報工学班 – 長野県長野工業高等学校")
-
-___
-___
-&copy; 2024-2025 Choko Computer Science Club.
