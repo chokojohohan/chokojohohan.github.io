@@ -1,6 +1,7 @@
 <head>
   <meta charset="utf-8">
-  <title>当ホームページの概要｜長野県長野工業高等学校 情報工学班</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
 </head>
 
