@@ -8,7 +8,7 @@
 > [!CAUTION]
 > 長野工業高等学校情報工学班員等の関係者以外は、このリポジトリの編集やフォーク等を禁止します。
 
-<img src="https://chokojohohan.github.io/logo_w.svg" alt="QR Code" width="35%" height="auto" style="display:block;margin:0 auto;margin-bottom:20px">
+<img src="https://chokojohohan.github.io/logo_w.svg" alt="QR Code" width="25%" height="auto" style="display:block;margin:0 auto;margin-bottom:20px">
 
 # 当ホームページの概要
 ## 現在の状況
