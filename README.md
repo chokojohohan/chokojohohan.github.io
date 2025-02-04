@@ -63,21 +63,21 @@
 ---
 
 ## 開発記録
-|日付|内容|
+|日付(月/日)|内容|
 |:---:|:---|
 |<nobr>**2024年**</nobr>||
-|<nobr>5月3日</nobr>|ホームページ制作を開始する。（@PP-Various/private）|
-|<nobr>5月4日</nobr>|現在のホームページの原型が完成。以降、個人的に開発を進める。|
-|<nobr>11月25日</nobr>|情報工学班のホームページ制作が正式に班の活動になる。|
-|<nobr>11月27日</nobr>|リポジトリを移動し、開発を進める。（@PP-Various/johoclub）|
+|<nobr>05/03</nobr>|ホームページ制作を開始する。（@PP-Various/private）|
+|<nobr>05/04</nobr>|現在のホームページの原型が完成。以降、個人的に開発を進める。|
+|<nobr>11/25</nobr>|情報工学班のホームページ制作が正式に班の活動になる。|
+|<nobr>11/27</nobr>|リポジトリを移動し、開発を進める。（@PP-Various/johoclub）|
 |<nobr>**2025年**</nobr>||
-|<nobr>1月17日</nobr>|公開するリポジトリを作成する。（@chokojohohan/chokojohohan.github.io）|
-|<nobr>1月22日</nobr>|開発環境から本番環境へのソースコードの移動するためにリリースする。（@PP-Various/johoclub/releases）|
-|<nobr>1月22日</nobr>|GitHub Pagesで公開するリポジトリにソースコードを追加する。（@chokojohohan/chokojohohan.github.io）|
-|<nobr>1月22日</nobr>|GitHub Pagesで公開を開始する。<br>学校側の確認作業が終了するまで検索結果に表示されないようにするために`robot`を`noindex`に設定する。|
-|<nobr>1月29日</nobr>|ホームページの概要に「当ホームページの運営方針」を追記する。|
-|<nobr>2月2日</nobr>|ホームページの概要に「当ホームページ開発での生成AIの利用について」を追記する。|
-|<nobr>2月3日</nobr>|情報工学班員と顧問の先生向けにホームページの紹介をする。|
+|<nobr>01/17</nobr>|公開するリポジトリを作成する。（@chokojohohan/chokojohohan.github.io）|
+|<nobr>01/22</nobr>|開発環境から本番環境へのソースコードの移動するためにリリースする。（@PP-Various/johoclub/releases）|
+|<nobr>01/22</nobr>|GitHub Pagesで公開するリポジトリにソースコードを追加する。（@chokojohohan/chokojohohan.github.io）|
+|<nobr>01/22</nobr>|GitHub Pagesで公開を開始する。<br>学校側の確認作業が終了するまで検索結果に表示されないようにするために`robot`を`noindex`に設定する。|
+|<nobr>01/29</nobr>|ホームページの概要に「当ホームページの運営方針」を追記する。|
+|<nobr>02/02</nobr>|ホームページの概要に「当ホームページ開発での生成AIの利用について」を追記する。|
+|<nobr>02/03</nobr>|情報工学班員と顧問の先生向けにホームページの紹介をする。|
 
 ---
 ## サイトを共有
