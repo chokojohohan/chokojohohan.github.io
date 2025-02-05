@@ -69,7 +69,12 @@
             <p>
                 以下の文章は全て生成AIが生成した文章です。<br>
                 下の文章を読んで使った生成AIを当ててみてね！班活動見学時に答え合わせしましょう！&nbsp;by&nbsp;ホームページ制作担当班員<br>
-                ※皆さんも生成AIを上手に活用しましょう。<br><br>
+                ※皆さんも生成AIを上手に活用しましょう。<br>
+                <div class="button-container">
+                    <a href="?page=1" class="link-button">問１</a>
+                    <a href="?page=2" class="link-button">問２</a>
+                    <a href="?page=3" class="link-button">問３</a>
+                </div>
             </p>
             <!-- ページ指定しない場合(ページ1)のコンテンツ -->
             <div id="page-1" class="page-content">
@@ -228,6 +233,58 @@
                 rel="nofollow">Kawaii Logo Made by SAWARATSUKI.</a></div> -->
         <p class="copyright">&copy; 2024-2025 Choko Computer Science Club.</p>
     </footer>
+    <style>
+        .button-container {
+            text-align: center;
+        }
+        .link-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4472c4;
+            color: white !important;
+            text-align: center;
+            text-decoration: none !important;
+            font-size: 16px;
+            margin: 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .link-button:hover {
+            background-color: #416096;
+        }
+
+        .current-page-button {
+            background-color: #1855be;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 現在のページのクエリパラメータを取得
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const currentPage = urlParams.get('page');
+
+            // ボタン要素をすべて取得
+            const buttons = document.querySelectorAll('.link-button');
+
+            // ボタンをループ処理
+            buttons.forEach(button => {
+                // ボタンのhref属性からページ番号を抽出
+                const href = button.getAttribute('href');
+                const buttonParams = new URLSearchParams(href.substring(href.indexOf('?') + 1)); // '?'以降を抽出
+                const buttonPage = buttonParams.get('page');
+
+                // 現在のページとボタンのページ番号が一致するか確認
+                if (currentPage === buttonPage) {
+                    // 一致する場合、背景色を変更するクラスを追加
+                    button.classList.add('current-page-button');
+                }
+            });
+        });
+    </script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
