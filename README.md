@@ -14,8 +14,8 @@
 ## 現在の状況
 - 新ホームページは[こちら&nbsp;(chokojohohan.github.io/)](https://chokojohohan.github.io/ "ホーム｜長野工業高等学校情報工学班")  
 - 旧ホームページは[こちら&nbsp;(chokojohohan.github.io/Computerscienceclub/home.html)](https://chokojohohan.github.io/Computerscienceclub/home.html "ホーム｜長野工業高等学校情報工学班(旧)")
-> 当ホームページは確認中のため検索サイトの結果に表示されないよう設定していますが、完全に非表示を保証するものではありません。
-> 確認が完了次第、この設定を解除し、正式に公開いたします。
+  ※旧ホームページを開くと新ホームページへリダイレクトします。
+> 学校側による確認作業が終了しました。2025年2月7日に正式公開します。
 > また、刷新計画[2. ]（旧ホームページに新ホームページへリダイレクトするコードの追加）を実施します。
 
 ---
@@ -34,7 +34,7 @@
 |suc1.html|`<meta http-equiv="refresh" content="0; url=https://chokojohohan.github.io/event.html#scratch" />`|
 |syougakusei.html|`<meta http-equiv="refresh" content="0; url=https://chokojohohan.github.io/event.html#persocom_class" />`|
 |u15p1.html|`<meta http-equiv="refresh" content="0; url=https://chokojohohan.github.io/event.html#u-15" />`| -->
-
+<!-- TODO: 実行 -->
 ---
 
 ## 当ホームページ運営方針について
@@ -74,10 +74,11 @@
 |<nobr>01/17</nobr>|公開するリポジトリを作成する。（@chokojohohan/chokojohohan.github.io）|
 |<nobr>01/22</nobr>|開発環境から本番環境へのソースコードの移動するためにリリースする。（@PP-Various/johoclub/releases）|
 |<nobr>01/22</nobr>|GitHub Pagesで公開するリポジトリにソースコードを追加する。（@chokojohohan/chokojohohan.github.io）|
-|<nobr>01/22</nobr>|GitHub Pagesで公開を開始する。<br>学校側の確認作業が終了するまで検索結果に表示されないようにするために`robot`を`noindex`に設定する。|
+|<nobr>01/22</nobr>|GitHub Pagesで公開を開始する。<br>~~学校側の確認作業が終了するまで検索結果に表示されないようにするために`robot`を`noindex`に設定する。~~|
 |<nobr>01/29</nobr>|ホームページの概要に「当ホームページの運営方針」を追記する。|
 |<nobr>02/02</nobr>|ホームページの概要に「当ホームページ開発での生成AIの利用について」を追記する。|
 |<nobr>02/03</nobr>|情報工学班員と顧問の先生向けにホームページの紹介をする。|
+|<nobr>02/06</nobr>|学校側の確認作業が終了し、一般公開の許可が下りる。|
 
 ---
 ## サイトを共有
