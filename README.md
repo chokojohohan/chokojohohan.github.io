@@ -15,7 +15,7 @@
 - 新ホームページは[こちら&nbsp;(chokojohohan.github.io/)](https://chokojohohan.github.io/ "ホーム｜長野工業高等学校情報工学班")  
 - 旧ホームページは[こちら&nbsp;(chokojohohan.github.io/Computerscienceclub/home.html)](https://chokojohohan.github.io/Computerscienceclub/home.html "ホーム｜長野工業高等学校情報工学班(旧)")  
 <!--  ※旧ホームページを開くと新ホームページへリダイレクトします。-->
-> 学校側による確認作業が終了しました。2025年2月7日に正式公開します。
+> 学校側による確認作業が終了しました。2025年2月8日に正式公開します。
 > また、刷新計画[2. ]（旧ホームページに新ホームページへリダイレクトするコードの追加）を実施します。
 
 ---
