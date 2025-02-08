@@ -16,25 +16,6 @@
 - 旧ホームページは[こちら&nbsp;(chokojohohan.github.io/Computerscienceclub/home.html)](https://chokojohohan.github.io/Computerscienceclub/home.html "ホーム｜長野工業高等学校情報工学班(旧)")  
 <!--  ※旧ホームページを開くと新ホームページへリダイレクトします。-->
 > 学校側による確認作業が終了しました。2025年2月8日に正式公開します。
-> また、刷新計画[2. ]（旧ホームページに新ホームページへリダイレクトするコードの追加）を実施します。
-
----
-### 情報班ホームページ刷新計画（URLの短縮・更新）
-- [x] <s>情報班のGitHubに"chokojohohan.github.io"というパブリックリポジトリを作成し、現在制作中の新ホームページのソースコードを追加する。</s>
-- [ ] 情報班のGitHubの"Computerscienceclub"リポジトリの1つ1つのHTMLファイルに対応するchokojohohan.github.ioにリフレッシュするためのコードを加える。
-> "Computerscienceclub"リポジトリはパブリックのままで、GitHub Pagesも公開したままにする。ブックマーク等の影響で404になることを避けるため。
-
-<!-- |ファイル名|追加内容|
-|:---:|:---|
-|home.html|`<meta http-equiv="refresh" content="0; url=https://chokojohohan.github.io/" />`|
-|other.html|`<meta http-equiv="refresh" content="0; url=https://chokojohohan.github.io/activity.html#web" />`|
-|pcclass1.html|`<meta http-equiv="refresh" content="0; url=https://chokojohohan.github.io/event.html#persocom_class" />`|
-|python.html|`<meta http-equiv="refresh" content="0; url=https://chokojohohan.github.io/activity.html#puzzle" />`|
-|sangyofea2022.html|`<meta http-equiv="refresh" content="0; url=https://chokojohohan.github.io/activity.html#puzzle" />`|
-|suc1.html|`<meta http-equiv="refresh" content="0; url=https://chokojohohan.github.io/event.html#scratch" />`|
-|syougakusei.html|`<meta http-equiv="refresh" content="0; url=https://chokojohohan.github.io/event.html#persocom_class" />`|
-|u15p1.html|`<meta http-equiv="refresh" content="0; url=https://chokojohohan.github.io/event.html#u-15" />`| -->
-<!-- TODO: 実行 -->
 ---
 
 ## 当ホームページ運営方針について
