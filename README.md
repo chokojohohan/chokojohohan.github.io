@@ -14,8 +14,8 @@
 ## 現在の状況
 - 新ホームページは[こちら&nbsp;(chokojohohan.github.io/)](https://chokojohohan.github.io/ "ホーム｜長野工業高等学校情報工学班")  
 - 旧ホームページは[こちら&nbsp;(chokojohohan.github.io/Computerscienceclub/home.html)](https://chokojohohan.github.io/Computerscienceclub/home.html "ホーム｜長野工業高等学校情報工学班(旧)")  
-<!--  ※旧ホームページを開くと新ホームページへリダイレクトします。-->
-> 学校側による確認作業が終了しました。2025年2月8日に正式公開します。
+> ※旧ホームページを開くと新ホームページへリダイレクトします。
+> 学校側による確認作業が終了しました。
 ---
 
 ## 当ホームページ運営方針について
@@ -58,7 +58,7 @@
 |<nobr>02/02</nobr>|ホームページの概要に「当ホームページ開発での生成AIの利用について」を追記する。|
 |<nobr>02/03</nobr>|情報工学班員と顧問の先生向けにホームページの紹介をする。|
 |<nobr>02/06</nobr>|学校側の確認作業が終了し、一般公開の許可が下りる。|
-|<nobr>02/08</nobr>|旧ホームページのソースコードに新ホームページへリダイレクトするコードを追加する。<br>検索結果に表示されるように`noindex`を解除する。<br>GoogleSearchConsoleへ登録する。|
+|<nobr>02/08</nobr>|旧ホームページのソースコードに新ホームページへリダイレクトするコードを追加する。<br>検索結果に表示されるように`noindex`を解除する。<br>GoogleSearchConsoleへ登録する。<br>PageSpeedInsightsで判明したパフォーマンスの問題への対応を行う。|
 
 <!-- `googlee4e556c33a659257.html`はGoogle Search Consoleの所有確認用なので削除しないこと。 --->
 

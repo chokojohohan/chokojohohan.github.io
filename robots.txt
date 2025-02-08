@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /Computerscienceclub/
 
 Sitemap: https://chokojohohan.github.io/sitemap.xml
