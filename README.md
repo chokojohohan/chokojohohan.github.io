@@ -53,14 +53,14 @@
 |<nobr>11/27</nobr>|リポジトリを移動し、開発を進める。（@PP-Various/johoclub）|
 |<nobr>**2025年**</nobr>||
 |<nobr>01/17</nobr>|公開するリポジトリを作成する。（@chokojohohan/chokojohohan.github.io）|
-|<nobr>01/22</nobr>|開発環境から本番環境へのソースコードの移動するためにリリースする。（@PP-Various/johoclub/releases）|
-|<nobr>01/22</nobr>|GitHub Pagesで公開するリポジトリにソースコードを追加する。（@chokojohohan/chokojohohan.github.io）|
-|<nobr>01/22</nobr>|GitHub Pagesで公開を開始する。<br>~~学校側の確認作業が終了するまで検索結果に表示されないようにするために`robot`を`noindex`に設定する。~~|
+|<nobr>01/22</nobr>|開発環境から本番環境へのソースコードの移動するためにリリースする。（@PP-Various/johoclub/releases）<br>GitHub Pagesで公開するリポジトリにソースコードを追加する。（@chokojohohan/chokojohohan.github.io）<br>GitHub Pagesで公開を開始する。<br>~~学校側の確認作業が終了するまで検索結果に表示されないようにするために`robot`を`noindex`に設定する。~~|
 |<nobr>01/29</nobr>|ホームページの概要に「当ホームページの運営方針」を追記する。|
 |<nobr>02/02</nobr>|ホームページの概要に「当ホームページ開発での生成AIの利用について」を追記する。|
 |<nobr>02/03</nobr>|情報工学班員と顧問の先生向けにホームページの紹介をする。|
 |<nobr>02/06</nobr>|学校側の確認作業が終了し、一般公開の許可が下りる。|
-|<nobr>02/08</nobr>|旧ホームページのソースコードに新ホームページへリダイレクトするコードを追加する。|
+|<nobr>02/08</nobr>|旧ホームページのソースコードに新ホームページへリダイレクトするコードを追加する。<br>検索結果に表示されるように`noindex`を解除する。|
+
+<!-- `googlee4e556c33a659257.html`はGoogle Search Consoleの所有確認用なので削除しないこと。 --->
 
 ---
 ## サイトを共有

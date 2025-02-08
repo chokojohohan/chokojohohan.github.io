@@ -2,37 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://chokojohohan.github.io/</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-02-08</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://chokojohohan.github.io/index.html</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-02-08</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://chokojohohan.github.io/about.html</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-02-08</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://chokojohohan.github.io/activity.html</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-02-08</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://chokojohohan.github.io/event.html</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-02-08</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://chokojohohan.github.io/welcome_ai.html</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-02-08</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
     </url>
@@ -50,12 +50,6 @@
     </url>
     <url>
         <loc>https://chokojohohan.github.io/403.html</loc>
-        <lastmod>2025-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.1</priority>
-    </url>
-    <url>
-        <loc>https://chokojohohan.github.io/diary/</loc>
         <lastmod>2025-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.1</priority>
