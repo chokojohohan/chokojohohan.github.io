@@ -32,13 +32,71 @@
     <link rel="stylesheet" type="text/css" href="style/background.css">
     <link rel="stylesheet" type="text/css" href="style/scroll.css">
     <link rel="stylesheet" type="text/css" href="style/gallery.css">
-    <link rel="stylesheet" type="text/css" href="style/loading.css">
+    <!-- <link rel="stylesheet" type="text/css" href="style/loading.css">インライン化する -->
     <link rel="stylesheet" type="text/css" href="style/menu.css">
     <link rel="stylesheet" type="text/css" href="style/link_card.css">
     <link rel="stylesheet" type="text/css" href="style/style-sp.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <style>
+        /* 元loading.css */
+        /* Loading背景画面設定 */
+        #splash {
+            /*fixedで全面に固定*/
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 999999;
+            background: #000;
+            text-align: center;
+            color: #fff;
+        }
+
+        /* Loading画像中央配置 */
+        #splash_logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Loading アイコンの大きさ設定 */
+        #splash_logo img {
+            width: 260px;
+        }
+
+        /* fadeUpをするアイコンの動き */
+        .fadeUp {
+            animation-name: fadeUpAnime;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+            opacity: 0;
+            border-radius: 0px !important;
+        }
+
+        @keyframes fadeUpAnime {
+            from {
+                opacity: 0;
+                transform: translateY(100px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+    <script>
+        // 元loading.js
+        //logoの表示
+        $(window).on('load', function () {
+            $("#splash").delay(1500).fadeOut('slow');//ローディング画面を1.5秒（1500ms）待機してからフェードアウト
+            $("#splash_logo").delay(1200).fadeOut('slow');//ロゴを1.2秒（1200ms）待機してからフェードアウト
+        });
+    </script>
 </head>
 <!-- 情報工学班で、あなたの「やりたい！」を形にしよう！ -->
+
 <body>
     <div id="splash">
         <div id="splash_logo"><img src="logo_w.svg" alt="情報工学班のロゴ" class="fadeUp"></div>
@@ -92,9 +150,9 @@
                         <li><a class="nav" href="activity.html">ACTIVITIES</a></li>
                         <li><a class="navsub" href="activity.html#competition">競技プログラミング</a></li>
                         <li><a class="navsub" href="activity.html#production">制作物</a></li>
-				<li><a class="nav" href="event.html">EVENTS</a></li>
-				<li><a class="navsub" href="event.html#external">外部活動の支援</a></li>
-				<li><a class="navsub" href="event.html#internal">班内特別活動</a></li>
+                        <li><a class="nav" href="event.html">EVENTS</a></li>
+                        <li><a class="navsub" href="event.html#external">外部活動の支援</a></li>
+                        <li><a class="navsub" href="event.html#internal">班内特別活動</a></li>
                     </ul>
                 </div>
             </nav>
@@ -134,8 +192,10 @@
                             <a class="link-card" href="about.html">
                                 <div class="link-card-content">
                                     <div class="link-card-image" id="grid-content-1">
-                                        <img loading="lazy" class="pc_display" id="thumbnail-image-code" src="images/johoclub_ogp.webp" alt="情報工学班のホームページ用キャッチコピー画像">
-                                        <img loading="lazy" class="sp_display" id="thumbnail-image-code" src="johoclub_ogp.webp" alt="情報工学班のホームページ用キャッチコピー画像">
+                                        <img loading="lazy" class="pc_display" id="thumbnail-image-code"
+                                            src="images/johoclub_ogp.webp" alt="情報工学班のホームページ用キャッチコピー画像">
+                                        <img loading="lazy" class="sp_display" id="thumbnail-image-code"
+                                            src="johoclub_ogp.webp" alt="情報工学班のホームページ用キャッチコピー画像">
                                     </div>
                                     <div class="link-card-text" id="grid-content-2">
                                         <p class="link-card-title">情報工学班について｜長野工業高等学校 情報工学班</p>
@@ -168,8 +228,10 @@
                             <a class="link-card" href="welcome_ai.html?page=1">
                                 <div class="link-card-content">
                                     <div class="link-card-image" id="grid-content-1">
-                                        <img loading="lazy" class="pc_display" id="thumbnail-image-code" src="images/welcome_ai_ogp_cube.webp" alt="生成AIが情報工学班について説明するページの画像">
-                                        <img loading="lazy" class="sp_display" id="thumbnail-image-code" src="images/welcome_ai_ogp.webp" alt="生成AIが情報工学班について説明するページの画像">
+                                        <img loading="lazy" class="pc_display" id="thumbnail-image-code"
+                                            src="images/welcome_ai_ogp_cube.webp" alt="生成AIが情報工学班について説明するページの画像">
+                                        <img loading="lazy" class="sp_display" id="thumbnail-image-code"
+                                            src="images/welcome_ai_ogp.webp" alt="生成AIが情報工学班について説明するページの画像">
                                     </div>
                                     <div class="link-card-text" id="grid-content-2">
                                         <p class="link-card-title">ようこそ！情報工学班へ！｜長野工業高等学校 情報工学班</p>
@@ -207,8 +269,7 @@
                             </div>
                             <b>外部リンク</b><br>
                             <span class="select-none">・&nbsp;</span>
-                            <a href="https://www.nagano-c.ed.jp/choko/"
-                                target="_blank"
+                            <a href="https://www.nagano-c.ed.jp/choko/" target="_blank"
                                 rel="nofollow">長野県長野工業高等学校（https://www.nagano-c.ed.jp/choko/）</a><br>
                             <span class="select-none">・&nbsp;</span>
                             <a href="https://www.nagano-c.ed.jp/choko/index.php/school-life/club/jouhouhan/"
@@ -304,7 +365,8 @@
                 <ul class="slider2 box fadeUpTrigger">
                     <li>
                         <a class="white_section_link" href="event.html#persocom_class" style="text-decoration: none;">
-                            <img loading="lazy" class="slider2_img" src="images/persocom_class_2022_basic_course.webp" alt="小学生パソコン教室">
+                            <img loading="lazy" class="slider2_img" src="images/persocom_class_2022_basic_course.webp"
+                                alt="小学生パソコン教室">
                             <div class="slider2_txt">
                                 <p>
                                     夏休みに小学生を対象にしたパソコン教室を開催しました。
@@ -314,8 +376,7 @@
                     </li>
                     <li>
                         <a class="white_section_link" href="event.html#school-fes" style="text-decoration: none;">
-                            <img loading="lazy" class="slider2_img"
-                                src="images/choko-fes.webp" alt="学校開放長工祭">
+                            <img loading="lazy" class="slider2_img" src="images/choko-fes.webp" alt="学校開放長工祭">
                             <div class="slider2_txt">
                                 <p>
                                     学校開放&nbsp;長工祭ではオリジナルハンコ作り、オリジナルTシャツプリント、作品の展示を行いました。
@@ -360,7 +421,8 @@
                 <img loading="lazy" class="chokologo" src="images/choko-logo.webp" alt="長野工業高校のロゴ">
             </a>
             <div class="kawaiiLogo">
-                <a class="kawaiiLogo_txt" href="https://github.com/SAWARATSUKI/KawaiiLogos" target="_blank" rel="nofollow">
+                <a class="kawaiiLogo_txt" href="https://github.com/SAWARATSUKI/KawaiiLogos" target="_blank"
+                    rel="nofollow">
                     Kawaii Logo Made by SAWARATSUKI.
                 </a>
             </div>
@@ -372,7 +434,7 @@
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="javascript/script.js"></script>
     <script src="javascript/gallery.js"></script>
-    <script src="javascript/loading.js"></script>
+    <!-- <script src="javascript/loading.js"></script> -->
     <script src="javascript/menu.js"></script>
 </body>
 
