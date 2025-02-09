@@ -32,68 +32,15 @@
     <link rel="stylesheet" type="text/css" href="style/background.css">
     <link rel="stylesheet" type="text/css" href="style/scroll.css">
     <link rel="stylesheet" type="text/css" href="style/gallery.css">
-    <!-- <link rel="stylesheet" type="text/css" href="style/loading.css">インライン化する -->
+    <link rel="stylesheet" type="text/css" href="style/loading.css">
     <link rel="stylesheet" type="text/css" href="style/menu.css">
     <link rel="stylesheet" type="text/css" href="style/link_card.css">
     <link rel="stylesheet" type="text/css" href="style/style-sp.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <style>
-        /* 元loading.css */
-        /* Loading背景画面設定 */
-        #splash {
-            /*fixedで全面に固定*/
-            position: fixed;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 999999;
-            background: #000;
-            text-align: center;
-            color: #fff;
-        }
-
-        /* Loading画像中央配置 */
-        #splash_logo {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        /* Loading アイコンの大きさ設定 */
-        #splash_logo img {
-            width: 260px;
-        }
-
-        /* fadeUpをするアイコンの動き */
-        .fadeUp {
-            animation-name: fadeUpAnime;
-            animation-duration: 0.5s;
-            animation-fill-mode: forwards;
-            opacity: 0;
-            border-radius: 0px !important;
-        }
-
-        @keyframes fadeUpAnime {
-            from {
-                opacity: 0;
-                transform: translateY(100px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    </style>
-    <script>
-        // 元loading.js
-        //logoの表示
-        $(window).on('load', function () {
-            $("#splash").delay(1500).fadeOut('slow');//ローディング画面を1.5秒（1500ms）待機してからフェードアウト
-            $("#splash_logo").delay(1200).fadeOut('slow');//ロゴを1.2秒（1200ms）待機してからフェードアウト
-        });
-    </script>
+    <script src="javascript/loading.js"></script>
+    <script src="javascript/script.js"></script>
+    <script src="javascript/gallery.js"></script>
+    <script src="javascript/menu.js"></script>
 </head>
 <!-- 情報工学班で、あなたの「やりたい！」を形にしよう！ -->
 
@@ -432,10 +379,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="javascript/script.js"></script>
-    <script src="javascript/gallery.js"></script>
-    <!-- <script src="javascript/loading.js"></script> -->
-    <script src="javascript/menu.js"></script>
 </body>
 
 </html>
