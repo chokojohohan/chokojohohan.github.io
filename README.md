@@ -69,12 +69,13 @@
   ```txt
   https://chokojohohan.github.io/
   ```
-- QRコード  
+- QRコード[^3]  
   ![QR_Code](https://chokojohohan.github.io/qr_code.png "QR Code")
   ```txt
   https://chokojohohan.github.io/qr_code.png
   ```
 
+[^3]: QRコードは株式会社デンソーウェーブの登録商標です。
 ---
 
 <span style="display:block;text-align:center;font-family:'Audiowide',sans-serif;font-size:110%;">
