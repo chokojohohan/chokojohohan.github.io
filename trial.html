@@ -37,6 +37,24 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" defer
         type="text/javascript"></script>
+    <style>
+        .trial_img {
+            display: block;
+            width: 30%;
+            margin: auto;
+            /* filter: drop-shadow(0px 0px 2px black); */
+            user-select: none;
+            margin-right: 10px;
+        }
+        @media screen and (max-width: 768px) {
+            .trial_img {
+                width: 60%;
+            }
+            #trial-content {
+                margin-top: 50px;
+            }
+        }
+    </style>
 </head>
 <!-- 情報工学班で、あなたの「やりたい！」を形にしよう！ -->
 
@@ -79,6 +97,9 @@
                                 // その時にせん孔室にいる2,3年生が教えられることならなんでも可能！<br>
                                 // 相談なども可能な限り答えます！<br>
                         </span></span></p>
+                        <span class="slide-in leftAnime"><span class="slide-in_inner leftAnimeInner">
+                            <img loading="lazy" class="trial_img" src="images/digital_ai_character.webp" alt="デジタルなAIキャラのイラスト">
+                        </span></span>
                         <!-- <span class="slide-in leftAnime"><span class="slide-in_inner leftAnimeInner"> -->
                             <!-- 画像の赤矢印線は生徒昇降口から情報(I)棟への道順です。<br> -->
                             <!-- <img loading="lazy" class="activity_img" src="images/map.webp">  -->
@@ -105,8 +126,8 @@
     <footer id="footer">
         <a class="chokologobox imglink" href="https://www.nagano-c.ed.jp/choko/" target="_blank" rel="nofollow">
             <img loading="lazy" class="chokologo" src="images/choko-logo.webp" alt="長野工業高校のロゴ"></a>
-        <!-- <div class="kawaiiLogo"><a class="kawaiiLogo_txt" href="https://github.com/SAWARATSUKI/KawaiiLogos" target="_blank"
-                rel="nofollow">Kawaii Logo Made by SAWARATSUKI.</a></div> -->
+        <div class="kawaiiLogo"><a class="kawaiiLogo_txt" href="https://loosedrawing.com/illust/1394/" target="_blank"
+                rel="nofollow">illustration by Loose Drawing</a></div>
         <p class="copyright">&copy; 2024-2025 Choko Computer Science Club.</p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
