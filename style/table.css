@@ -1,5 +1,5 @@
 table {
-    width: 80vw;
+    width: 70vw;
     border-collapse: collapse;
     border: 2px solid #8c8c8c;
     font-family: "Noto Sans JP",sans-serif;
@@ -33,11 +33,26 @@ tbody>tr:nth-of-type(even) {
     background-color: #edeef2;
 }
 
-tfoot th {
+.tableLeft {
+    text-align: left;
+}
+
+.tableCenter {
     text-align: center;
 }
 
-tfoot td {
+.mei {
     font-weight: bold;
-    text-align: center;
+    padding-left: 100px;
+}
+
+@media screen and (max-width: 768px) {
+    .mei {
+        padding-left: 12px;
+    }
+}
+
+.kubun {
+    width: 20%;
+    min-width: 60px;
 }
