@@ -49,7 +49,7 @@ input[type="checkbox"].on-off {
 .open {
     padding: 1em;
     border-radius: 8px;
-    height: 400px;
+    height: 450px;
     /*ちらっと見える部分の高さ*/
     overflow: hidden;
     transition: .5s;
