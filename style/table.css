@@ -1,5 +1,5 @@
 table {
-    width: 70vw;
+    width: 80vw;
     border-collapse: collapse;
     border: 2px solid #8c8c8c;
     font-family: "Noto Sans JP",sans-serif;
@@ -55,4 +55,9 @@ tbody>tr:nth-of-type(even) {
 .kubun {
     width: 20%;
     min-width: 60px;
+}
+
+.jmPoint {
+    width: 10%;
+    min-width: 20px;
 }
