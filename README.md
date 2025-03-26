@@ -88,3 +88,11 @@
 # 長野県長野工業高等学校
 - [ホームページ](https://www.nagano-c.ed.jp/choko/ "長野県長野工業高等学校 – ようこそ！長野工業高等学校WEBサイトへ")
 - [情報工学班について](https://www.nagano-c.ed.jp/choko/index.php/school-life/club/jouhouhan/ "情報工学班 – 長野県長野工業高等学校")
+
+
+<!--
+robots.txt
+```txt
+Disallow: /Computerscienceclub/
+```
+-->
