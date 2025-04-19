@@ -61,6 +61,7 @@
 |<nobr>02/08</nobr>|旧ホームページのソースコードに新ホームページへリダイレクトするコードを追加する。<br>検索結果に表示されるように`noindex`を解除する。<br>Google Search Consoleへ登録する。<br>Page Speed Insightsで判明したパフォーマンスの問題への対応(画像を全てWebPに変換する等)を行う。|
 |<nobr>02/09</nobr>|GoogleやYahoo!Japanの検索結果に表示されるようになる。|
 |<nobr>03/04</nobr>|Bing Webmasters Toolsへ登録する。|
+|<nobr>04/19</nobr>|ロゴタイプを変更する。|
 
 <!-- `googlee4e556c33a659257.html`はGoogle Search Consoleの所有確認用なので削除しないこと。 --->
 
