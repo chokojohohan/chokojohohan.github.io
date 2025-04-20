@@ -76,6 +76,9 @@
   ```txt
   https://chokojohohan.github.io/qr_code.png
   ```
+  ```txt
+  https://chokojohohan.github.io/qr_code.svg
+  ```
 
 [^3]: QRコードは株式会社デンソーウェーブの登録商標です。
 ---
