@@ -8,7 +8,7 @@
 > [!CAUTION]
 > 長野工業高等学校情報工学班員等の関係者以外は、このリポジトリの編集やフォーク等を禁止します。
 
-<img src="https://chokojohohan.github.io/logo_w.svg" alt="QR Code" width="25%" height="auto" style="display:block;margin:0 auto;margin-bottom:20px">
+<img src="https://chokojohohan.github.io/logo_w.svg" alt="情報工学班" width="25%" height="auto" style="display:block;margin:0 auto;margin-bottom:20px">
 
 # 当ホームページの概要
 ## 現在の状況
@@ -61,9 +61,18 @@
 |<nobr>02/08</nobr>|旧ホームページのソースコードに新ホームページへリダイレクトするコードを追加する。<br>検索結果に表示されるように`noindex`を解除する。<br>Google Search Consoleへ登録する。<br>Page Speed Insightsで判明したパフォーマンスの問題への対応(画像を全てWebPに変換する等)を行う。|
 |<nobr>02/09</nobr>|GoogleやYahoo!Japanの検索結果に表示されるようになる。|
 |<nobr>03/04</nobr>|Bing Webmasters Toolsへ登録する。|
-|<nobr>04/19</nobr>|ロゴタイプを変更する。|
+|<nobr>04/19</nobr>|ロゴタイプを修正する。|
 
 <!-- `googlee4e556c33a659257.html`はGoogle Search Consoleの所有確認用なので削除しないこと。 --->
+---
+## ロゴタイプ
+  <img src="https://chokojohohan.github.io/joulogo_b.svg" alt="情ロゴ" width="6%" height="auto"><br> 
+  <img src="https://chokojohohan.github.io/logo_w.svg" alt="情報工学班ロゴタイプ" width="25%" height="auto"><br>
+### フォント
+- 情, 情報工学班<br>
+  **M PLUS 1**
+- Computer Science Club<Br>
+  **Inter**
 
 ---
 ## サイトを共有
