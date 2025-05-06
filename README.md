@@ -31,6 +31,12 @@
   - 情報工学に興味がある方はもちろん、少しでも「面白そうだな」と感じたら、ぜひ一度情報工学班の活動を見学に来てください。
   - 私たちと一緒に、情報工学の面白さを体験しましょう！ 皆さんの入班を心よりお待ちしています！
 
+## 公式YouTubeチャンネル運営について
+情報工学班では公式YouTubeチャンネルを運営しています。  
+このチャンネルでは、ホームページに容量の不足により載せることのできなかった動画を投稿し、ホームページの内容を充実させることが目的です。  
+また、動画は基本的に限定公開に設定して公開予定です。ホームページからリンクに飛んでご覧ください。
+> [長工 情報工学班(@chokojohohan) - YouTube](https://www.youtube.com/@chokojohohan)
+
 ---
 
 ### 生成AIの利用について
@@ -62,6 +68,7 @@
 |<nobr>02/09</nobr>|GoogleやYahoo!Japanの検索結果に表示されるようになる。|
 |<nobr>03/04</nobr>|Bing Webmasters Toolsへ登録する。|
 |<nobr>04/19</nobr>|ロゴタイプを修正する。|
+|<nobr>05/06</nobr>|公式YouTubeチャンネルを作成する。（<a href="https://www.youtube.com/@chokojohohan" target="_blank" rel="nofollow">YouTube</a>）|
 
 <!-- `googlee4e556c33a659257.html`はGoogle Search Consoleの所有確認用なので削除しないこと。 --->
 ---
@@ -102,6 +109,7 @@
 - [ホームページ](https://www.nagano-c.ed.jp/choko/ "長野県長野工業高等学校 – ようこそ！長野工業高等学校WEBサイトへ")
 - [情報工学班について](https://www.nagano-c.ed.jp/choko/index.php/school-life/club/jouhouhan/ "情報工学班 – 長野県長野工業高等学校")
 
+---
 
 <!--
 robots.txt

@@ -1,12 +1,19 @@
-$(".openbtn").click(function () {
-    $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
-    $("#g-nav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
-});
+// jQueryが読み込まれていることを確認してください
+$(document).ready(function() { // DOM読み込み後に実行
 
-$("#g-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
-    $(".openbtn").removeClass('active');//ボタンの activeクラスを除去し
-    $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
-});
+    $(".openbtn").click(function () {
+        $(this).toggleClass('active'); // ボタン自身の activeクラスをトグル
+        $("#g-nav").toggleClass('panelactive'); // ナビゲーションの panelactiveクラスをトグル
+        $("#youtube").toggleClass('visible'); // YouTubeリンクの visibleクラスをトグル
+    });
+
+    $("#g-nav a").click(function () { // ナビゲーションのリンクがクリックされたら
+        $(".openbtn").removeClass('active'); // ボタンの activeクラスを除去
+        $("#g-nav").removeClass('panelactive'); // ナビゲーションの panelactiveクラスを除去
+        $("#youtube").removeClass('visible'); // YouTubeリンクの visibleクラスを除去
+    });
+
+}); // $(document).ready の終わり
 
 // keydownイベントの処理を追加
 document.addEventListener("keydown", function (event) {

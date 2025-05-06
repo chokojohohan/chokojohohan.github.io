@@ -140,6 +140,8 @@ footer {
 }
 
 .copyright {
+    margin: auto;
+    padding-top: 30px;
     text-align: center;
     margin-top: 80px;
     font-family: "Makinas-Flat", sans-serif;
@@ -405,6 +407,52 @@ a.imglink img {
         opacity: 1;
         transform: translateY(100px);
     }
+}
+
+/* 元の #youtube のスタイル */
+#youtube {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: 100003; /* メニューより手前に表示 */
+    background-color: #5996ff;
+    backdrop-filter: blur(2px);
+    border-radius: 50px;
+    /*はじめは非表示*/
+    opacity: 0;
+    transform: translateY(100px);
+    /* transition の対象プロパティを明記するとより良い */
+    transition: opacity .3s ease-out, transform .3s ease-out;
+    /* 非表示時にクリックイベントを無効化 */
+    pointer-events: none;
+    filter: drop-shadow(0px 0px 3px white);
+}
+
+/* メニューが開いたときに #youtube に付与するクラス */
+#youtube.visible {
+    opacity: 1;
+    transform: translateY(0);
+    /* 表示時にクリックイベントを有効化 */
+    pointer-events: auto;
+}
+
+/* ホバー効果は変更なし */
+#youtube:hover {
+    background-color: #5584d4;
+    backdrop-filter: blur(2px);
+    transition: background-color .3s ease-in-out, backdrop-filter .3s ease-in-out;
+}
+
+/* 元の #youtube a のスタイル（変更なし） */
+#youtube a {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+    color: #ffffff;
 }
 
 /*角丸に変わる*/
