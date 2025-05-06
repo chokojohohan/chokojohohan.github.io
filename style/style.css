@@ -414,7 +414,8 @@ a.imglink img {
     position: fixed;
     right: 16px;
     bottom: 16px;
-    z-index: 100003; /* メニューより手前に表示 */
+    z-index: 100003;
+    /* メニューより手前に表示 */
     background-color: #5996ff;
     backdrop-filter: blur(2px);
     border-radius: 50px;
@@ -500,6 +501,7 @@ a.imglink img {
 }
 
 @media screen and (max-width: 640px) {
+
     .pc_display,
     .pc_inline {
         display: none;
@@ -511,5 +513,15 @@ a.imglink img {
 
     .sp_display {
         display: block;
+    }
+}
+
+iframe.youtube {
+    padding: 10px;
+    border-radius: 13px;
+    max-width: 80vw;
+    @media screen and (max-width: 640px) {
+        height: auto;
+        min-height: 222px;
     }
 }
