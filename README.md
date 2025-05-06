@@ -68,7 +68,7 @@
 |<nobr>02/09</nobr>|GoogleやYahoo!Japanの検索結果に表示されるようになる。|
 |<nobr>03/04</nobr>|Bing Webmasters Toolsへ登録する。|
 |<nobr>04/19</nobr>|ロゴタイプを修正する。|
-|<nobr>05/06</nobr>|公式YouTubeチャンネルを作成する。（<a href="https://www.youtube.com/@chokojohohan" target="_blank" rel="nofollow">YouTube</a>）|
+|<nobr>05/06</nobr>|公式YouTubeアカウント公開とそれに伴うホームページ更新（[長工 情報工学班(@chokojohohan) - YouTube](https://www.youtube.com/@chokojohohan)）|
 
 <!-- `googlee4e556c33a659257.html`はGoogle Search Consoleの所有確認用なので削除しないこと。 --->
 ---
