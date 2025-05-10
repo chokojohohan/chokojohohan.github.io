@@ -77,7 +77,7 @@
   <img src="https://chokojohohan.github.io/logo_w.svg" alt="情報工学班ロゴタイプ" width="25%" height="auto"><br>
 ### フォント
 - 情, 情報工学班<br>
-  **M PLUS 1**
+  **M PLUS 1 Black**
 - Computer Science Club<Br>
   **Inter**
 
