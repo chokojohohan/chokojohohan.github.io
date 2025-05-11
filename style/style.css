@@ -525,3 +525,46 @@ iframe.youtube {
         min-height: 222px;
     }
 }
+
+/*全て共通：hideエリアをはじめは非表示*/
+.hide-area{
+	display: none;
+}
+
+/*全て共通：モーダルのボタンの色を変更したい場合*/
+.modaal-close:after, 
+.modaal-close:before{
+	background:#ccc;	
+}
+
+.modaal-close:focus:after,
+.modaal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before{
+	background:#666;
+}
+
+/*動画表示のモーダル：余白を変更したい場合*/
+.modaal-video .modaal-inner-wrapper{
+	padding:0;
+}
+
+.modaal-video-container {
+    border-radius: 4px;
+}
+
+.modaal-close {
+    right: 16px !important;
+    top: 64px !important;
+}
+
+.modaal-close:after,
+.modaal-close:before {
+    background-color: #000000 !important;
+    filter: drop-shadow(0px 0px 3px white) !important;
+}
+
+.modaal-close:focus,
+.modaal-close:hover {
+    background-color: #00000000 !important;
+}
