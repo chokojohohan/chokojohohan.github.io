@@ -26,11 +26,16 @@
 	<link rel="stylesheet" href="style/scroll.css">
 	<link rel="stylesheet" href="style/gallery.css">
 	<!-- <link rel="stylesheet" href="style/loading.css"> -->
+	<link rel="stylesheet" href="style/show_more.css">
 	<link rel="stylesheet" href="style/menu.css">
 	<link rel="stylesheet" href="style/style-sp.css">
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 	<link rel="stylesheet"
 		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" defer
+        type="text/javascript"></script>
 </head>
 <!-- 情報工学班で、あなたの「やりたい！」を形にしよう！ -->
 <body>
@@ -160,20 +165,75 @@
 						一年生スクラッチ発表会
 					</span></span></h2>
 			<p class="explain"><span class="slide-in leftAnime"><span class="slide-in_inner leftAnimeInner">
-						1年生がスクラッチを使い、作品製作を行いました。この画像は、実際に1年生が作成した作品です。その後、発表会を行いました。<br>
-						（下の作品は2023年度のものです。2025年度の作品はYouTubeで公開予定です。）
+						1年生がスクラッチを使い、作品製作を行いました。この動画は、実際に1年生が作成した作品です。その後、発表会を行いました。<br>
 					</span></span></p>
 			<span class="slide-in leftAnime"><span class="slide-in_inner leftAnimeInner">
-					<img loading="lazy" class="activity_img scratch_img" src="images/scratch_2023_1.webp" alt="1年生のスクラッチの作品（2023年）">
-					<img loading="lazy" class="activity_img scratch_img" src="images/scratch_2023_2.webp" alt="1年生のスクラッチの作品（2023年）">
-					<img loading="lazy" class="activity_img scratch_img" src="images/scratch_2023_3.webp" alt="1年生のスクラッチの作品（2023年）">
-					<img loading="lazy" class="activity_img scratch_img" src="images/scratch_2023_4.webp" alt="1年生のスクラッチの作品（2023年）">
-					<img loading="lazy" class="activity_img scratch_img" src="images/scratch_2023_5.webp" alt="1年生のスクラッチの作品（2023年）">
-					<img loading="lazy" class="activity_img scratch_img" src="images/scratch_2023_6.webp" alt="1年生のスクラッチの作品（2023年）">
-					<img loading="lazy" class="activity_img scratch_img" src="images/scratch_2023_7.webp" alt="1年生のスクラッチの作品（2023年）">
-					<img loading="lazy" class="activity_img scratch_img" src="images/scratch_2023_8.webp" alt="1年生のスクラッチの作品（2023年）">
-					<img loading="lazy" class="activity_img scratch_img" src="images/scratch_2023_9.webp" alt="1年生のスクラッチの作品（2023年）">
-					<img loading="lazy" class="activity_img scratch_img" src="images/scratch_2023_10.webp" alt="1年生のスクラッチの作品（2023年）">
+				<div class="scratch_pcdisplay">
+					<p class="explain">
+						1つの動画(2025年度)/画像(2023年度)で1作品ずつです。
+					</p>
+					<div class="open-box">
+                        <input type="checkbox" id="switch" class="on-off" />
+                        <div class="open_black">
+							<div class="scratch_img_box">
+								<iframe class="activity_img scratch_img" width="560" height="315" src="https://www.youtube-nocookie.com/embed/u-bXHKzJHRk?si=00EeOLIVnJIAYDYJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+								<iframe class="activity_img scratch_img" width="560" height="315" src="https://www.youtube-nocookie.com/embed/T4tUuVc8k-M?si=excEuyhrL0SXWLS7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+								<iframe class="activity_img scratch_img" width="560" height="315" src="https://www.youtube-nocookie.com/embed/2lWP8sT5gOs?si=7KBgLcjZTagOunLG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+								<iframe class="activity_img scratch_img" width="560" height="315" src="https://www.youtube-nocookie.com/embed/irU9HVP8kqs?si=DcTUTRWvjjJnhqkz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+								<iframe class="activity_img scratch_img" width="560" height="315" src="https://www.youtube-nocookie.com/embed/fO7NmWSqh_k?si=nueECBLwnXbD2lIn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+								<iframe class="activity_img scratch_img" width="560" height="315" src="https://www.youtube-nocookie.com/embed/G5GkH14Ym-E?si=c1e_c447RvIxDpsj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+								<iframe class="activity_img scratch_img" width="560" height="315" src="https://www.youtube-nocookie.com/embed/CVw7HC4sYag?si=hWnVm15aaGoTPZBZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+								<iframe class="activity_img scratch_img" width="560" height="315" src="https://www.youtube-nocookie.com/embed/b3EZcY_DF-U?si=lwvp-ru7xpjQ0Q04" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+								<iframe class="activity_img scratch_img" width="560" height="315" src="https://www.youtube-nocookie.com/embed/DvB9PwTjDqI?si=1RhLvtTCDpHV1VRw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+								<iframe class="activity_img scratch_img" width="560" height="315" src="https://www.youtube-nocookie.com/embed/-2PqHEC7KXk?si=yXckX0TzsiMl5rrz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+								<iframe class="activity_img scratch_img" width="560" height="315" src="https://www.youtube-nocookie.com/embed/X1a4iyUyLtI?si=_Fh2fcxWM0WCqWM8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+								<iframe class="activity_img scratch_img" width="560" height="315" src="https://www.youtube-nocookie.com/embed/anwRoW_dpxI?si=6F7R0ghO4_S88sfG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+								<iframe class="activity_img scratch_img" width="560" height="315" src="https://www.youtube-nocookie.com/embed/FWrStcv840g?si=qa9RZ2k9ljNPseVP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+								<iframe class="activity_img scratch_img" width="560" height="315" src="https://www.youtube-nocookie.com/embed/xuJVri83fOg?si=c3Uu3ueyx7lPsNDS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+								<iframe class="activity_img scratch_img" width="560" height="315" src="https://www.youtube-nocookie.com/embed/eKbfsSms-4U?si=AmXG8LzCB5_TjLfK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+								<iframe class="activity_img scratch_img" width="560" height="315" src="https://www.youtube-nocookie.com/embed/uLr4dAXEQhQ?si=HE09MXYn7mBC9PnG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+								<iframe class="activity_img scratch_img" width="560" height="315" src="https://www.youtube-nocookie.com/embed/7f1VIETKLag?si=pPSNHmcznHhYKgK_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+								<iframe class="activity_img scratch_img" width="560" height="315" src="https://www.youtube-nocookie.com/embed/sUHwXeRIuR0?si=3k8o3zOrTQbSE5we" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+								<img loading="lazy" class="activity_img scratch_img" src="images/scratch_2023_1.webp" alt="1年生のスクラッチの作品（2023年）">
+								<img loading="lazy" class="activity_img scratch_img" src="images/scratch_2023_2.webp" alt="1年生のスクラッチの作品（2023年）">
+								<img loading="lazy" class="activity_img scratch_img" src="images/scratch_2023_3.webp" alt="1年生のスクラッチの作品（2023年）">
+								<img loading="lazy" class="activity_img scratch_img" src="images/scratch_2023_4.webp" alt="1年生のスクラッチの作品（2023年）">
+								<img loading="lazy" class="activity_img scratch_img" src="images/scratch_2023_5.webp" alt="1年生のスクラッチの作品（2023年）">
+								<img loading="lazy" class="activity_img scratch_img" src="images/scratch_2023_6.webp" alt="1年生のスクラッチの作品（2023年）">
+								<img loading="lazy" class="activity_img scratch_img" src="images/scratch_2023_7.webp" alt="1年生のスクラッチの作品（2023年）">
+								<img loading="lazy" class="activity_img scratch_img" src="images/scratch_2023_8.webp" alt="1年生のスクラッチの作品（2023年）">
+								<img loading="lazy" class="activity_img scratch_img" src="images/scratch_2023_9.webp" alt="1年生のスクラッチの作品（2023年）">
+								<img loading="lazy" class="activity_img scratch_img" src="images/scratch_2023_10.webp" alt="1年生のスクラッチの作品（2023年）">
+							</div>
+                        </div>
+                        <label for="switch" class="open-label"></label>
+                    </div>
+				</div>
+				<div class="scratch_spdisplay">
+					<p class="explain">
+						これは2025年度の作品の再生リストです。動画右上の[<span class="material-symbols-outlined">playlist_play</span>]で動画(作品)の一覧を表示できます。
+					</p>
+					<iframe class="youtube" width="560" height="315" src="https://www.youtube-nocookie.com/embed/videoseries?si=lObSu9yDBZFFm9yT&amp;list=PLD3VZNqpuqSDYst1G2j63gJBvRWbLH0cF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					<p class="explain">
+						2023年度の作品は下の画像をタップすることでご覧いただけます。
+						左右端をタップすることで全ての作品を表示できます。
+					</p>
+					<a class="imglink zoom" href="images/scratch_2023_1.webp" data-lightbox="web"
+                        data-title="1年生のスクラッチの作品（2023年）">
+                        <img loading="lazy" class="activity_img scratch_img" src="images/johohan_scratch_2023.webp" alt="1年生のスクラッチの作品集（2023年）">
+                    </a>
+					<a class="imglink zoom" href="images/scratch_2023_2.webp" data-lightbox="web" data-title="1年生のスクラッチの作品（2023年）"></a>
+					<a class="imglink zoom" href="images/scratch_2023_3.webp" data-lightbox="web" data-title="1年生のスクラッチの作品（2023年）"></a>
+					<a class="imglink zoom" href="images/scratch_2023_4.webp" data-lightbox="web" data-title="1年生のスクラッチの作品（2023年）"></a>
+					<a class="imglink zoom" href="images/scratch_2023_5.webp" data-lightbox="web" data-title="1年生のスクラッチの作品（2023年）"></a>
+					<a class="imglink zoom" href="images/scratch_2023_6.webp" data-lightbox="web" data-title="1年生のスクラッチの作品（2023年）"></a>
+					<a class="imglink zoom" href="images/scratch_2023_7.webp" data-lightbox="web" data-title="1年生のスクラッチの作品（2023年）"></a>
+					<a class="imglink zoom" href="images/scratch_2023_8.webp" data-lightbox="web" data-title="1年生のスクラッチの作品（2023年）"></a>
+					<a class="imglink zoom" href="images/scratch_2023_9.webp" data-lightbox="web" data-title="1年生のスクラッチの作品（2023年）"></a>
+					<a class="imglink zoom" href="images/scratch_2023_10.webp" data-lightbox="web" data-title="1年生のスクラッチの作品（2023年）"></a>
+				</div>
+				<p class="explain">2025年度1年生の作品のYouTube再生リストのリンクは<a href="https://youtube.com/playlist?list=PLD3VZNqpuqSDYst1G2j63gJBvRWbLH0cF&feature=shared" target="_blank" rel="nofollow">こちら</a>です。</p>
+					
 				</span></span>
 		</div>
 		<div>

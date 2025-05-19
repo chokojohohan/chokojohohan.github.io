@@ -568,3 +568,25 @@ iframe.youtube {
 .modaal-close:hover {
     background-color: #00000000 !important;
 }
+
+.scratch_pcdisplay {
+    display: block;
+}
+
+.scratch_spdisplay {
+    display: none;
+}
+
+@media screen and (max-width: 640px) {
+    .scratch_pcdisplay {
+        display: none;
+    }
+
+    .scratch_spdisplay {
+        display: block;
+    }
+}
+
+.material-symbols-outlined {
+    vertical-align: middle;
+}

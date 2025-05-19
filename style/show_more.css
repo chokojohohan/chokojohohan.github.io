@@ -46,7 +46,8 @@ input[type="checkbox"].on-off {
 }
 
 /*開閉エリア*/
-.open {
+.open,
+.open_black {
     padding: 1em;
     border-radius: 8px;
     height: 450px;
@@ -56,7 +57,8 @@ input[type="checkbox"].on-off {
     position: relative;
 }
 
-.on-off:checked~.open {
+.on-off:checked~.open,
+.on-off:checked~.open_black {
     padding: 1.5em 1em;
     height: auto;
 }
@@ -73,8 +75,20 @@ input[type="checkbox"].on-off {
     z-index: 3;
 }
 
+.open_black::before {
+    content: '';
+    background: linear-gradient(to bottom, transparent, #000000 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
 /*開いたらぼかしを消す*/
-.on-off:checked~.open::before {
+.on-off:checked~.open::before,
+.on-off:checked~.open_black::before {
     background: none;
     z-index: -1;
 }
