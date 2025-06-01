@@ -5,6 +5,7 @@
 * {
     margin: 0;
     padding: 0;
+    background-color: #ffffff;
 }
 
 .material-symbols-outlined {
@@ -13,7 +14,8 @@
 
 
 body {
-    background-color: #bfeaeb00;
+    /* background-color: #bfeaeb00; */
+    background-color: #ffffff;
     font-family: "Noto Sans JP", sans-serif;
     cursor: default;
 }
