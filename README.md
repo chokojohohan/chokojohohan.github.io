@@ -69,6 +69,7 @@
 |<nobr>03/04</nobr>|Bing Webmasters Toolsへ登録する。|
 |<nobr>04/19</nobr>|ロゴタイプを修正する。|
 |<nobr>05/06</nobr>|公式YouTubeアカウント公開とそれに伴うホームページ更新（[長工 情報工学班(@chokojohohan) - YouTube](https://www.youtube.com/@chokojohohan)）|
+|<nobr>11/22</nobr>|引継ぎのための定義書を作成する。|
 
 <!-- `googlee4e556c33a659257.html`はGoogle Search Consoleの所有確認用なので削除しないこと。 --->
 ---
@@ -80,6 +81,13 @@
   **M PLUS 1 Black**
 - Computer Science Club<Br>
   **Inter**
+### カラーパレット
+- 青系<br>
+  **#4372c0**
+- 黒<br>
+  **#000000**
+- 白<br>
+  **#ffffff**
 
 ---
 ## サイトを共有
