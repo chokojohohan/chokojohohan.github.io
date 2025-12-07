@@ -2,7 +2,7 @@ table {
     width: 80vw;
     border-collapse: collapse;
     border: 2px solid #8c8c8c;
-    font-family: "Noto Sans JP",sans-serif;
+    font-family: "Google Sans Flex", "Noto Sans JP", "Noto Color Emoji", sans-serif;
     font-size: 1rem;
     letter-spacing: 1px;
 }
@@ -42,7 +42,7 @@ tbody>tr:nth-of-type(even) {
 }
 
 .mei {
-    font-weight: bold;
+    font-weight: 600;
     padding-left: 100px;
 }
 
