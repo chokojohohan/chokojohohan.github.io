@@ -77,3 +77,15 @@
         display: block;
     }
 }
+
+@media screen and (max-width: 640px) {
+    .trial_img_container {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .trial_img_img {
+        width: 100%;
+    }
+}
