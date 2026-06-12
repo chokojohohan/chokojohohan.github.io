@@ -12,12 +12,18 @@
     font-size: 40px;
 }
 
+html {
+    /* 16px × 62.5% ＝ 10px になる */
+    font-size: 62.5%;
+}
 
 body {
     /* background-color: #bfeaeb00; */
     background-color: #ffffff;
     font-family: "Google Sans Flex", "Noto Sans JP", "Noto Color Emoji", sans-serif;
     cursor: default;
+    /* 1.6rem ＝ 16px（標準サイズに戻す） */
+    font-size: 1.6rem;
 }
 
 header {
@@ -72,7 +78,7 @@ img {
     /*背景透明に*/
     border-left: solid 5px #4472c4;
     /*左線*/
-    font-size: 200%;
+    font-size: 3.2rem;
 }
 
 .black_section h2 {
@@ -84,7 +90,7 @@ img {
     /*背景透明に*/
     border-left: solid 5px #4472c4;
     /*左線*/
-    font-size: 200%;
+    font-size: 3.2rem;
 }
 
 .white_section {
@@ -137,7 +143,7 @@ footer {
     color: #000000;
     text-decoration: none;
     font-family: "Comfortaa", sans-serif;
-    font-size: 80%;
+    font-size: 1.28rem;
     height: 70px;
 }
 
@@ -156,8 +162,13 @@ footer {
 }
 
 .explain {
-    padding: 10px;
-    font-size: 120%;
+    /* padding: 0px 0px 0px 10px; */
+    font-size: 1.8rem;
+}
+
+.small_explain {
+    /* padding: 0px 0px 0px 10px; */
+    font-size: 1.4rem;
 }
 
 .activity_img video {
@@ -211,7 +222,7 @@ a.imglink img {
     text-align: left;
     margin-top: 10px;
     margin-bottom: 20px;
-    font-size: 130%;
+    font-size: 1.76rem;
 }
 
 /*== 外の線が伸びる */
@@ -365,7 +376,7 @@ a.imglink img {
 }
 
 #page-top .material-symbols-outlined {
-    font-size: 40px;
+    font-size: 4rem;
 }
 
 #page-top:hover {
@@ -486,6 +497,13 @@ a.imglink img {
 .white_section_link,
 .black_section_link {
     text-decoration: none;
+}
+
+.pc_display,
+.sp_display,
+.explain,
+.small_explain {
+    padding-left: 10px;
 }
 
 .pc_display {

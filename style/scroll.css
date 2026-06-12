@@ -24,7 +24,7 @@
     top: -15px;
     /*テキストの形状*/
     color: #eee;
-    font-size: 0.7rem;
+    font-size: 1.1rem;
     letter-spacing: 0.05em;
     user-select: none;
 }
@@ -245,14 +245,16 @@
     }
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     width: 5px;
     display: none;
 }
-body::-webkit-scrollbar-track{
+
+body::-webkit-scrollbar-track {
     background-color: #fff;
 }
-body::-webkit-scrollbar-thumb{
+
+body::-webkit-scrollbar-thumb {
     background-color: #4473c4;
     /* border-radius: 10px; */
 }

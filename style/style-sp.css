@@ -76,6 +76,63 @@
     body::-webkit-scrollbar {
         display: block;
     }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        background-color: #ffffff5c;
+        backdrop-filter: blur(7px);
+        z-index: 100001;
+    }
+
+    .headerlogo {
+        height: 50px;
+        padding: 5px;
+        filter: drop-shadow(0 0 3px white);
+        user-select: none;
+    }
+
+    #header {
+        position: fixed;
+        top: -60px;
+        /* ヘッダーの高さ分上に移動 */
+        left: 0;
+        width: 100%;
+        transition: top 0.3s ease-in-out;
+        /* スムーズな表示/非表示のアニメーション */
+    }
+
+    #header_n {
+        position: fixed;
+        top: 0;
+        /* ヘッダーの高さ分上に移動 */
+        left: 0;
+        width: 100%;
+        /* transition: top 0.3s ease-in-out; */
+        /* スムーズな表示/非表示のアニメーション */
+        z-index: 99;
+    }
+
+    .openbtn {
+        position: fixed;
+        top: 6px;
+        right: 6px;
+        z-index: 100002;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+    }
+
+    .explain {
+        font-size: 1.6rem;
+    }
+
+    #splash_logo img {
+        width: 230px;
+    }
 }
 
 @media screen and (max-width: 640px) {

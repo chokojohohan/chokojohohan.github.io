@@ -125,7 +125,7 @@
     text-transform: uppercase;
     letter-spacing: 0.1em;
     /* font-weight: bold; */
-    /* filter: drop-shadow(0px 0px 0px #333); */
+    text-shadow: 0px 0px 5px white;
 }
 
 .nav {
@@ -140,7 +140,7 @@
     text-decoration: none;
     outline: none;
     font-weight: bold;
-    filter: drop-shadow(0px 0px 3px white);
+    text-shadow: 0px 0px 5px white;
 }
 
 /* 丸が動く */
@@ -153,12 +153,14 @@
     /*丸の形状*/
     width: 50px;
     height: 50px;
-    background: #ffffff;
+    background: #deeaffc0;
     color: #fff;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     /*アニメーションの指定*/
     transition: .3s ease-out;
-    border: solid #333;
+    /* border: solid #333; */
+    border-bottom: 3px solid #333;
+    transform: skewX(-30deg);
     opacity: 0;
 }
 
@@ -194,7 +196,7 @@
     text-decoration: none;
     outline: none;
     font-weight: bolder;
-    filter: drop-shadow(0px 0px 3px white);
+    text-shadow: 0px 0px 5px white;
 }
 
 /* 丸が動く */
@@ -207,9 +209,11 @@
     /*丸の形状*/
     width: 50px;
     height: 50px;
-    background: #bbd4ff;
-    border: solid #333;
-    border-radius: 50px;
+    background: #bbd4ffc0;
+    /* border: solid #333; */
+    transform: skewX(-30deg);
+    /* border-radius: 50px; */
+    border-bottom: 3px solid #333;
     /*アニメーションの指定*/
     transition: .3s ease-out;
     opacity: 0;
@@ -233,6 +237,7 @@
     border-right: 1px solid #000;
     transform: rotate(45deg);
 }
+
 /* TODO:ドロップダウンメニュー対応化 */
 /* -> 画面の縦幅に応じて内容の表示を変えるという手段に出る */
 /* @media screen and (max-height: 870px) {
