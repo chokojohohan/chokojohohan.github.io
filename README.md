@@ -72,17 +72,20 @@
 |<nobr>11/22</nobr>|引継ぎのための定義書を作成する。|
 |<nobr>**2026年**</nobr>||
 |<nobr>04/01</nobr>|引継ぎ。|
+|<nobr>08/17</nobr>|ロゴタイプをダウンロードできるようにする。|
 
 <!-- `googlee4e556c33a659257.html`はGoogle Search Consoleの所有確認用なので削除しないこと。 --->
 ---
 ## ロゴタイプ
   <img src="https://chokojohohan.github.io/joulogo_b.svg" alt="情ロゴ" width="6%" height="auto"><br> 
   <img src="https://chokojohohan.github.io/logo_w.svg" alt="情報工学班ロゴタイプ" width="25%" height="auto"><br>
+### ダウンロード
+  各ロゴタイプ、ファビコンのダウンロードは[こちら（https://chokojohohan.github.io/logo_dl）](https://chokojohohan.github.io/logo_dl)。
 ### フォント
 - 情, 情報工学班<br>
   **M PLUS 1 Black**
 - Computer Science Club<Br>
-  **Inter**
+  **Inter Black**
 ### カラーパレット
 - 青系<br>
   **#4473C5**
