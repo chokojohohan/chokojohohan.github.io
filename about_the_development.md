@@ -73,7 +73,7 @@
 - **制作者**: 長野工業高等学校 情報工学班（2025年度 副班長）
 - **GitHub ID**: [@PP-Various](https://github.com/PP-Various)
 - **メールアドレス**: [choko23424@gmail.com](mailto:choko23424@gmail.com)
-- メールアドレス2: [choko23424@outlook.jp](mailto:choko23424@outlook.jp)
+- メールアドレス2: [nu.k26364@gmail.com](mailto:nu.k26364@gmail.com)
 - **Discord**: @pp_pixel_4289
 
 ---
