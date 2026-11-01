@@ -524,7 +524,8 @@ a.imglink,
 .pc_display,
 .sp_display,
 .explain,
-.small_explain {
+.small_explain,
+.external_links {
     padding-left: 10px;
 }
 
