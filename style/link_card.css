@@ -8,7 +8,7 @@
     background-color: #fff;
     border: 1px solid gray;
     border-radius: 8px;
-    margin: 0;
+    margin: 20px 0 30px 0;
     padding: 10px;
     text-decoration: none;
 }
@@ -23,6 +23,7 @@
 .link-card,
 a:hover.link-card,
 a:focus.link-card {
+    display: block;
     text-decoration: none;
     outline: none;
     color: #333;
@@ -30,6 +31,11 @@ a:focus.link-card {
 
 .link-card-image,
 .link-card-text {
+    width: 100%;
+}
+
+.link-card-image picture {
+    display: block;
     width: 100%;
 }
 
@@ -83,7 +89,8 @@ blockquote {
 
 @media (min-width: 640px) {
     .link-card-content {
-        width: 80vw;
+        width: 100%;
+        max-width: 100%;
         display: grid;
         grid-template-columns: auto 1fr;
         grid-template-rows: auto 1fr;
@@ -109,8 +116,9 @@ blockquote {
     #grid-content-3 {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
-        display: grid;
-        grid-template-rows: auto 1fr;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         margin-top: 5px;
         padding-left: 20px;
     }

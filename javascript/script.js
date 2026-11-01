@@ -37,28 +37,15 @@ $('#page-top').click(function () {
 
 // 動きのきっかけの起点となるアニメーションの名前を定義
 function BgFadeAnime() {
-
 	// 背景色が伸びて出現（左から右）
-	$('.bgLRextendTrigger').each(function () { //bgLRextendTriggerというクラス名が
-		var elemPos = $(this).offset().top - 50;//要素より、50px上の
+	$('.bgextend').each(function () {
+		var elemPos = $(this).offset().top - 50;
 		var scroll = $(window).scrollTop();
 		var windowHeight = $(window).height();
 		if (scroll >= elemPos - windowHeight) {
-			$(this).addClass('bgLRextend');// 画面内に入ったらbgLRextendというクラス名を追記
+			$(this).addClass('bgLRextend');
 		} else {
-			$(this).removeClass('bgLRextend');// 画面外に出たらbgLRextendというクラス名を外す
-		}
-	});
-
-	// 文字列を囲う子要素
-	$('.bgappearTrigger').each(function () { //bgappearTriggerというクラス名が
-		var elemPos = $(this).offset().top - 50;//要素より、50px上の
-		var scroll = $(window).scrollTop();
-		var windowHeight = $(window).height();
-		if (scroll >= elemPos - windowHeight) {
-			$(this).addClass('bgappear');// 画面内に入ったらbgappearというクラス名を追記
-		} else {
-			$(this).removeClass('bgappear');// 画面外に出たらbgappearというクラス名を外す
+			$(this).removeClass('bgLRextend');
 		}
 	});
 }
@@ -74,24 +61,17 @@ $(window).on('load', function () {
 });// ここまで画面が読み込まれたらすぐに動かしたい場合の記述
 
 function slideAnime() {
-	//====左に動くアニメーションここから===
-	$('.leftAnime').each(function () {
+	//====左から右へ表示するスライドアニメーション===
+	$('.slide-in').each(function () {
 		var elemPos = $(this).offset().top - 50;
 		var scroll = $(window).scrollTop();
 		var windowHeight = $(window).height();
 		if (scroll >= elemPos - windowHeight) {
-			//左から右へ表示するクラスを付与
-			//テキスト要素を挟む親要素（左側）とテキスト要素を元位置でアニメーションをおこなう
-			$(this).addClass("slideAnimeLeftRight"); //要素を左枠外にへ移動しCSSアニメーションで左から元の位置に移動
-			$(this).children(".leftAnimeInner").addClass("slideAnimeRightLeft");  //子要素は親要素のアニメーションに影響されないように逆の指定をし元の位置をキープするアニメーションをおこなう
+			$(this).addClass("slideAnime");
 		} else {
-			//左から右へ表示するクラスを取り除く
-			$(this).removeClass("slideAnimeLeftRight");
-			$(this).children(".leftAnimeInner").removeClass("slideAnimeRightLeft");
-
+			$(this).removeClass("slideAnime");
 		}
 	});
-
 }
 
 // 画面をスクロールをしたら動かしたい場合の記述

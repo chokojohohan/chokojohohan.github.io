@@ -61,3 +61,23 @@ tbody>tr:nth-of-type(even) {
     width: 10%;
     min-width: 20px;
 }
+
+/* 黒セクション内のテーブルスタイル */
+.black_section table {
+    border-color: #555555;
+    color: #ffffff;
+}
+
+.black_section th,
+.black_section td {
+    border-color: #555555;
+}
+
+.black_section thead,
+.black_section tfoot {
+    background-color: #2b4c7e;
+}
+
+.black_section tbody>tr:nth-of-type(even) {
+    background-color: #141414;
+}

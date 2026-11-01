@@ -162,13 +162,15 @@ footer {
 }
 
 .explain {
-    /* padding: 0px 0px 0px 10px; */
     font-size: 1.8rem;
+    line-height: 1.7;
+    margin-bottom: 1.6rem;
 }
 
 .small_explain {
-    /* padding: 0px 0px 0px 10px; */
     font-size: 1.4rem;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
 }
 
 .activity_img video {
@@ -182,6 +184,8 @@ a {
 a.imglink {
     display: inline-block;
     width: fit-content;
+    text-align: center;
+    text-decoration: none;
 }
 
 a.zoom {
@@ -207,14 +211,27 @@ a.imglink img {
     color: #ffffff;
 }
 
-.white_section h2 a {
+.white_section h2 a,
+.white_section a.imglink,
+.white_section a.white_section_link,
+.white_section a.link-card {
     text-decoration: none;
     color: #000000;
 }
 
-.black_section h2 a {
+.black_section h2 a,
+.black_section a.imglink,
+.black_section a.black_section_link,
+.black_section a.link-card {
     text-decoration: none;
     color: #ffffff;
+}
+
+.white_section a.imglink:hover,
+.black_section a.imglink:hover,
+.white_section a.white_section_link:hover,
+.black_section a.black_section_link:hover {
+    text-decoration: none;
 }
 
 .big_fontsize {
@@ -495,7 +512,12 @@ a.imglink img {
 }
 
 .white_section_link,
-.black_section_link {
+.black_section_link,
+a.imglink,
+.white_section a.white_section_link,
+.black_section a.black_section_link,
+.white_section a.imglink,
+.black_section a.imglink {
     text-decoration: none;
 }
 
@@ -619,4 +641,20 @@ iframe.youtube {
 
 .trial_img_img {
     width: 60%;
+}
+/* ユーティリティクラス */
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.font-small {
+    font-size: 60%;
 }
