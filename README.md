@@ -116,7 +116,7 @@
 ---
 
 <span style="display:block;text-align:center;font-family:'Audiowide',sans-serif;font-size:110%;">
-  © 2024-2025 Choko Computer Science Club.
+  © 2024-2026 Choko Computer Science Club.
 </span>
 
 ---
