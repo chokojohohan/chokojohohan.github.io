@@ -1,50 +1,41 @@
 @charset "utf-8";
 
-/*========= スクロールダウンのためのCSS ===============*/
-
-/*====== 9-1-1 縦線が動いてスクロールを促す =======*/
-
-/*スクロールダウン全体の場所*/
+/*========= スクロールダウンのためのCSS（縦線が動いてスクロールを促す） =========*/
 .scrolldown1 {
-    /*描画位置※位置は適宜調整してください*/
     position: absolute;
     right: 50%;
     bottom: 45px;
-    /*全体の高さ*/
     height: 50px;
-    /* background-color: #4472c4; */
-    z-index: 999;
+    z-index: 2;
 }
 
-/*Scrollテキストの描写*/
 .scrolldown1 span {
-    /*描画位置*/
     position: absolute;
     left: -15px;
     top: -15px;
-    /*テキストの形状*/
-    color: #eee;
-    font-size: 1.1rem;
+    color: #eeeeee;
+    font-size: 0.6875rem;
     letter-spacing: 0.05em;
     user-select: none;
 }
 
-/* 線の描写 */
 .scrolldown1::after {
     content: "";
-    /*描画位置*/
     position: absolute;
     top: 0;
-    /*線の形状*/
     width: 1px;
     height: 30px;
-    background: #eee;
-    /*線の動き1.4秒かけて動く。永遠にループ*/
-    animation: pathmove 1.4s ease-in-out infinite;
-    opacity: 0;
+    background: #eeeeee;
+    opacity: 0.7;
 }
 
-/*高さ・位置・透過が変化して線が上から下に動く*/
+@media (prefers-reduced-motion: no-preference) {
+    .scrolldown1::after {
+        animation: pathmove 1.4s ease-in-out infinite;
+        opacity: 0;
+    }
+}
+
 @keyframes pathmove {
     0% {
         height: 0;
@@ -64,12 +55,7 @@
     }
 }
 
-
-
-
-
-/*========= 左から右へ表示されるスライドアニメーション =========*/
-
+/*========= 左から右へ表示されるスライドアニメーション（script.js の IntersectionObserver で起動） =========*/
 .slide-in {
     opacity: 0;
     clip-path: inset(0 100% 0 0);
@@ -84,18 +70,19 @@
         opacity: 0;
         clip-path: inset(0 100% 0 0);
     }
+
     1% {
         opacity: 1;
         clip-path: inset(0 100% 0 0);
     }
+
     100% {
         opacity: 1;
         clip-path: inset(0 0 0 0);
     }
 }
 
-/*========= 背景色が伸びて出現（左から右：単一タグ対応） =========*/
-
+/*========= 背景色が伸びて見出し文字が出現（左から右：h1/h2 に .bgextend を付けて使う） =========*/
 .bgextend {
     position: relative;
     display: inline-block;
@@ -108,26 +95,25 @@
     animation: textAppear 1s ease forwards;
 }
 
-.white_section .bgextend.bgLRextend::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    animation: bgLRextendAnime 1s ease forwards;
-}
-
+.white_section .bgextend.bgLRextend::before,
 .black_section .bgextend.bgLRextend::before {
     content: "";
     position: absolute;
     top: 0;
+    right: 0;
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #fff;
     animation: bgLRextendAnime 1s ease forwards;
+}
+
+.white_section .bgextend.bgLRextend::before {
+    background-color: #000000;
+}
+
+.black_section .bgextend.bgLRextend::before {
+    background-color: #ffffff;
 }
 
 @keyframes bgLRextendAnime {
@@ -156,15 +142,12 @@
         color: transparent;
     }
 
-    50% {
-        color: inherit;
-    }
-
-    100% {
+    50%, 100% {
         color: inherit;
     }
 }
 
+/*========= 下からふわっと出現 =========*/
 .fadeUpTrigger {
     opacity: 0;
 }
@@ -188,16 +171,18 @@
     }
 }
 
-body::-webkit-scrollbar {
-    width: 5px;
-    display: none;
-}
+/* 視覚効果の軽減設定時はアニメを止めて最終表示状態を維持 */
+@media (prefers-reduced-motion: reduce) {
+    .slide-in,
+    .bgextend,
+    .fadeUpTrigger {
+        opacity: 1;
+        clip-path: none;
+        color: inherit;
+        animation: none;
+    }
 
-body::-webkit-scrollbar-track {
-    background-color: #fff;
-}
-
-body::-webkit-scrollbar-thumb {
-    background-color: #4473c4;
-    /* border-radius: 10px; */
+    .bgextend::before {
+        display: none;
+    }
 }

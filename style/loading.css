@@ -1,42 +1,56 @@
-/* Loading背景画面設定 */
+@charset "utf-8";
+
+/* Loading画面（トップページ用：#splash にロゴを表示し、loading.js で消す） */
 #splash {
-    /*fixedで全面に固定*/
     position: fixed;
     top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    height: 100%;
-    z-index: 999999;
-    background: #000;
-    text-align: center;
-    color: #fff;
+    height: 100dvh; /* スマホのアドレスバー伸縮にも対応した画面全高 */
+    z-index: 999;
+    background: #000000;
+    display: grid;
+    place-items: center;
+    color: #ffffff;
+    transition: opacity 0.45s ease-out, visibility 0.45s ease-out;
 }
 
-/* Loading画像中央配置 */
+#splash.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
 #splash_logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Loading アイコンの大きさ設定 */
 #splash_logo img {
     width: 260px;
+    height: auto;
+    max-width: 70vw;
 }
 
-/* fadeUpをするアイコンの動き */
-.fadeUp {
-    animation-name: fadeUpAnime;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-    opacity: 0;
-    border-radius: 0px !important;
+@media (prefers-reduced-motion: no-preference) {
+    #splash_logo img {
+        animation: splashFadeUp 0.45s ease-out forwards;
+    }
 }
 
-@keyframes fadeUpAnime {
+@media (prefers-reduced-motion: reduce) {
+    #splash {
+        transition-duration: 0.08s;
+    }
+}
+
+@keyframes splashFadeUp {
     from {
         opacity: 0;
-        transform: translateY(100px);
+        transform: translateY(40px);
     }
 
     to {
@@ -44,76 +58,3 @@
         transform: translateY(0);
     }
 }
-
-
-/* ========= 画面遷移のためのCSS ===============
-
-/*画面遷移アニメーション*/
-/* .splashbg {
-    display: none;
-} */
-
-/*bodyにappearクラスがついたら出現*/
-/* body.appear .splashbg {
-    display: block;
-    content: "";
-    position: fixed;
-    z-index: 999;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    transform: scaleY(0);
-    background-color: #000;//伸びる背景色の設定
-    animation-name: PageAnime;
-    animation-duration: 1.2s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-
-} */
-
-/* @keyframes PageAnime {
-    0% {
-        transform-origin: bottom;
-        transform: scaleY(0);
-    }
-
-    50% {
-        transform-origin: bottom;
-        transform: scaleY(1);
-    }
-
-    50.001% {
-        transform-origin: top;
-    }
-
-    100% {
-        transform-origin: top;
-        transform: scaleY(0);
-    }
-} */
-
-/*画面遷移の後現れるコンテンツ設定*/
-
-/* #container {
-    opacity: 0; //はじめは透過0に
-} */
-
-/*bodyにappearクラスがついたら出現*/
-/* body.appear #container {
-    animation-name: PageAnimeAppear;
-    animation-duration: 1s;
-    animation-delay: 0.8s;
-    animation-fill-mode: forwards;
-    opacity: 0;
-} */
-
-/* @keyframes PageAnimeAppear {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}  */

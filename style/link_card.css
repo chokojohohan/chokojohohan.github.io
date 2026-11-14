@@ -1,32 +1,38 @@
+@charset "utf-8";
+
 .white_section a.link-card {
     text-decoration: none;
 }
 
+/* リンクカード（トップページの ABOUT カードなど） */
 .link-card-wrapper {
     width: 100%;
-    box-sizing: border-box;
-    background-color: #fff;
-    border: 1px solid gray;
+    container-type: inline-size; /* カード自身の幅で下の @container レイアウトを切り替える */
+    background-color: #ffffff;
+    border: 1px solid #6b7280;
     border-radius: 8px;
-    margin: 20px 0 30px 0;
-    padding: 10px;
+    margin: 1.25rem 0 1.875rem 0;
+    padding: 0.75rem 1rem;
     text-decoration: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-@media screen and (max-width: 640px) {
-    .link-card-wrapper {
-        max-width: 350px;
-        min-width: none;
-    }
+.link-card-wrapper:hover {
+    border-color: var(--brand-blue);
+    box-shadow: 0 4px 16px rgb(0 0 0 / 0.08);
 }
 
 .link-card,
 a:hover.link-card,
-a:focus.link-card {
+a:focus-visible.link-card {
     display: block;
     text-decoration: none;
-    outline: none;
-    color: #333;
+    color: #222222;
+}
+
+.link-card-content {
+    display: grid;
+    gap: 0.75rem;
 }
 
 .link-card-image,
@@ -41,21 +47,22 @@ a:focus.link-card {
 
 .link-card-image img {
     width: 100%;
-    max-width: 97%;
-    text-align: center;
+    height: auto;
+    border-radius: 4px;
 }
 
 .link-card-title {
-    font-size: 2.24rem;
+    font-size: 1.4rem;
     line-height: 1.5;
     font-weight: bold;
-    margin: 0 0 10px 0;
+    margin: 0;
+    text-wrap: balance;
 }
 
 blockquote {
-    font-size: 1.7rem;
-    margin: 0 0 10px 0;
-    padding: 0 20px;
+    font-size: 1.0625rem;
+    margin: 0 0 0.625rem 0;
+    padding: 0 1.25rem;
     border-left: 5px solid #ddd;
 }
 
@@ -65,83 +72,63 @@ blockquote {
 }
 
 .link-card-description {
-    line-height: 1.5;
-    margin: 0 0 10px 0;
+    line-height: 1.55;
+    margin: 0 0 0.625rem 0;
+    text-wrap: pretty;
 }
 
 .link-card-domain {
     display: flex;
+    align-items: center;
 }
 
 .link-card-domain img {
     width: 16px;
     height: 16px;
-    margin: 0 8px 0 0;
+    margin-right: 8px;
 }
 
 .link-card-domain p {
     display: inline-block;
     margin: 0 10px 0 0;
-    color: gray;
-    font-size: 1.4rem;
+    color: #595959;
+    font-size: 0.875rem;
     line-height: 1.2;
 }
 
-@media (min-width: 640px) {
+/* カード幅が 520px 以上あるときは「左に画像・右に説明」の横並びにする */
+@container (min-width: 520px) {
     .link-card-content {
-        width: 100%;
-        max-width: 100%;
-        display: grid;
-        grid-template-columns: auto 1fr;
+        grid-template-columns: 180px 1fr;
         grid-template-rows: auto 1fr;
+        gap: 0.5rem 1.25rem;
     }
 
-    .link-card-title {
-        margin: 0;
-    }
-
-    /* image */
-    #grid-content-1 {
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
-    }
-
-    /* title */
-    #grid-content-2 {
+    .link-card-text {
         grid-column: 1 / 3;
         grid-row: 1 / 2;
     }
 
-    /* description,favicon,url */
-    #grid-content-3 {
-        grid-column: 2 / 3;
-        grid-row: 2 / 3;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-top: 5px;
-        padding-left: 20px;
-    }
-
     .link-card-image {
-        width: 100%;
-        margin: 5px 0;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        margin: 0.25rem 0;
     }
 
     .link-card-image img {
         width: 180px;
     }
 
-    .link-card-image img:hover {
-        opacity: 0.8;
-    }
-
-    .link-card-description {
-        margin: 0 0 10px 0;
+    .link-card-meta {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     .link-card-domain {
-        align-items: end;
-        margin-bottom: 5px;
+        align-items: flex-end;
+        margin-bottom: 0.25rem;
     }
 }

@@ -73,6 +73,9 @@
 |<nobr>**2026年**</nobr>||
 |<nobr>04/01</nobr>|引継ぎ。|
 |<nobr>08/17</nobr>|ロゴタイプをダウンロードできるようにする。|
+|<nobr>11/02</nobr>|コード内部の可読性を向上させる。（詳細はGitHub上のコミットメッセージを確認）|
+|<nobr>11/14</nobr>|Modern Web Guidance を参考に、コードを最新の書き方に刷新。（詳細はGitHub上のコミットメッセージを確認）|
+
 
 <!-- `googlee4e556c33a659257.html`はGoogle Search Consoleの所有確認用なので削除しないこと。 --->
 ---

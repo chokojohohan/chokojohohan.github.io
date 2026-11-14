@@ -1,56 +1,50 @@
-@media screen and (max-width:750px) {
+@charset "utf-8";
 
-    /*　画面サイズが750px以下の場合ここの記述が適用される　*/
-
+@media screen and (max-width: 750px) {
+    /* 画面サイズが 750px 以下（スマホ・小さめタブレット）のときだけ適用されるスタイル */
     .contitle {
-        top: 38vh;
+        top: 38dvh;
     }
 
     .white_section {
-        padding: 30px;
-        margin-top: 20px;
-    }
-
-    .slider img {
-        width: 62vw;
-    }
-
-    .slider_txt {
-        width: 50vw;
+        padding: 1.875rem;
+        margin-top: 1.25rem;
     }
 
     .black_section {
-        padding: 50px 30px 30px 30px;
-        margin-top: 0px;
+        padding: 3.125rem 1.875rem 1.875rem;
+        margin-top: 0;
     }
 
-    .chokologobox {
+    footer {
+        grid-template-columns: 1fr;
+        justify-items: center;
         text-align: center;
-        margin-top: 20px;
-        margin-left: 10px;
-        float: none;
+        gap: 0.75rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
-    .kawaiiLogo {
+    .chokologobox,
+    .footer-credit {
+        justify-self: center;
         text-align: center;
-        margin-right: auto;
-        margin-top: 0px;
-        float: none;
-    }
-
-    .copyright {
-        margin-top: 5px;
-        margin-top: 0px;
-    }
-
-    /*activities*/
-    #splash {
-        margin: 0;
-        margin-top: 0px;
     }
 
     .activity_img {
         width: 80vw;
+    }
+
+    .scratch_img_box > .imglink,
+    .scratch_img_box > .scratch_img,
+    .scratch_img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .open-panel {
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
     }
 
     .style-sp {
@@ -61,73 +55,35 @@
         width: 300px;
     }
 
-    .nav:hover::before {
+    .nav:is(:hover, :focus-visible)::before {
         width: 330px;
     }
-
-    /* .navsub:hover::before {
-        width: 300px;
-    } */
 
     #g-nav li a.navsub {
         display: none;
     }
 
-    body::-webkit-scrollbar {
-        display: block;
-    }
-
     header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
         height: 60px;
-        background-color: #ffffff5c;
-        backdrop-filter: blur(7px);
-        z-index: 100001;
     }
 
     .headerlogo {
+        box-sizing: content-box;
         height: 50px;
         padding: 5px;
-        filter: drop-shadow(0 0 3px white);
-        user-select: none;
     }
 
     #header {
-        position: fixed;
         top: -60px;
-        /* ヘッダーの高さ分上に移動 */
-        left: 0;
-        width: 100%;
-        transition: top 0.3s ease-in-out;
-        /* スムーズな表示/非表示のアニメーション */
-    }
-
-    #header_n {
-        position: fixed;
-        top: 0;
-        /* ヘッダーの高さ分上に移動 */
-        left: 0;
-        width: 100%;
-        /* transition: top 0.3s ease-in-out; */
-        /* スムーズな表示/非表示のアニメーション */
-        z-index: 99;
     }
 
     .openbtn {
-        position: fixed;
         top: 6px;
         right: 6px;
-        z-index: 100002;
-        cursor: pointer;
-        width: 50px;
-        height: 50px;
     }
 
     .explain {
-        font-size: 1.6rem;
+        font-size: 1rem;
     }
 
     #splash_logo img {
@@ -139,9 +95,7 @@
     .trial_img_container {
         display: block;
     }
-}
 
-@media screen and (max-width: 640px) {
     .trial_img_img {
         width: 100%;
     }

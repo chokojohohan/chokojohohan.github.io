@@ -1,15 +1,24 @@
+@charset "utf-8";
+
+/* 検定資格などの表（table）用スタイル */
+.table-container {
+    container-type: inline-size; /* 下の 6cqi（この枠の幅に応じた余白）計算に使う */
+    width: 100%;
+    overflow-x: auto;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
     border: 2px solid #8c8c8c;
-    font-family: "Google Sans Flex", "Noto Sans JP", "Noto Color Emoji", sans-serif;
-    font-size: 1.6rem;
-    letter-spacing: 1px;
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    letter-spacing: 0.04em;
 }
 
 caption {
     caption-side: bottom;
-    padding: 10px;
+    padding: 0.625rem;
     font-weight: bold;
 }
 
@@ -21,16 +30,8 @@ tfoot {
 th,
 td {
     border: 1px solid #a0a0a0;
-    padding: 10px 10px;
-    text-align: center
-}
-
-td:last-of-type {
+    padding: 0.625rem;
     text-align: center;
-}
-
-tbody>tr:nth-of-type(even) {
-    background-color: #edeef2;
 }
 
 .tableLeft {
@@ -41,15 +42,10 @@ tbody>tr:nth-of-type(even) {
     text-align: center;
 }
 
+/* 資格名の列：親枠の幅に合わせて左余白を自動調整する */
 .mei {
     font-weight: 600;
-    padding-left: 100px;
-}
-
-@media screen and (max-width: 768px) {
-    .mei {
-        padding-left: 12px;
-    }
+    padding-left: clamp(0.75rem, 6cqi, 6.25rem);
 }
 
 .kubun {
@@ -59,7 +55,7 @@ tbody>tr:nth-of-type(even) {
 
 .jmPoint {
     width: 10%;
-    min-width: 20px;
+    min-width: 3rem;
 }
 
 /* 黒セクション内のテーブルスタイル */
@@ -78,6 +74,10 @@ tbody>tr:nth-of-type(even) {
     background-color: #2b4c7e;
 }
 
-.black_section tbody>tr:nth-of-type(even) {
+.black_section tbody > tr:nth-of-type(even) {
     background-color: #141414;
+}
+
+tbody > tr:nth-of-type(even) {
+    background-color: #edeef2;
 }

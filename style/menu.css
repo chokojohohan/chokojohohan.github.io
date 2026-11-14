@@ -1,29 +1,31 @@
+@charset "utf-8";
+
 /*==================================================
-　5-2-1 3本線が×に
-===================================*/
-/*ボタン外側※レイアウトによってpositionや形状は適宜変更してください*/
+  ハンバーガーボタン（3本線が×に変わる）
+===================================================*/
 .openbtn {
     position: fixed;
     top: 16px;
     right: 16px;
-    z-index: 100002;
+    z-index: 110;
     cursor: pointer;
     width: 50px;
     height: 50px;
+    padding: 0;
+    border: 0;
+    background: transparent;
 }
 
-/*ボタン内側*/
 .openbtn span {
     display: inline-block;
-    transition: all .4s;
-    /*アニメーションの設定*/
+    transition: all 0.4s;
     position: absolute;
     left: 14px;
     height: 3px;
     border-radius: 2px;
-    background: #000;
+    background: #000000;
     width: 45%;
-    filter: drop-shadow(0px 0px 3px white);
+    filter: drop-shadow(0 0 3px white);
 }
 
 .openbtn span:nth-of-type(1) {
@@ -38,8 +40,6 @@
     top: 31px;
 }
 
-/*activeクラスが付与されると線が回転して×に*/
-
 .openbtn.active span:nth-of-type(1) {
     top: 18px;
     left: 18px;
@@ -49,7 +49,6 @@
 
 .openbtn.active span:nth-of-type(2) {
     opacity: 0;
-    /*真ん中の線は透過*/
 }
 
 .openbtn.active span:nth-of-type(3) {
@@ -59,57 +58,101 @@
     width: 30%;
 }
 
-/*========= ナビゲーションのためのCSS ===============*/
-
+/*========= ナビゲーション（<dialog> で全画面展開） ===============*/
 #g-nav {
-    /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
-    position: fixed;
-    z-index: 100001;
-    /*ナビのスタート位置と形状*/
-    top: -120%;
-    left: 0;
+    border: 0;
+    padding: 0;
+    margin: 0;
     width: 100%;
-    height: 100vh;
-    /*ナビの高さ*/
+    height: 100dvh;
+    max-width: none;
+    max-height: none;
     background-color: #ffffff5c;
     backdrop-filter: blur(7px);
-    /*動き*/
-    transition: all 0.6s;
     user-select: none;
     font-size: 170%;
+    overflow: hidden;
     opacity: 0;
+    /* <dialog> の表示・非表示をアニメーションさせるための設定 */
+    transition-property: opacity, transform, display, overlay;
+    transition-duration: 0.6s;
+    transition-timing-function: ease;
+    transition-behavior: allow-discrete;
 }
 
-/*アクティブクラスがついたら位置を0に*/
-#g-nav.panelactive {
-    top: 0;
+@media (prefers-reduced-motion: no-preference) {
+    #g-nav {
+        transform: translateY(-100%);
+    }
+}
+
+#g-nav[open] {
+    display: block;
     opacity: 1;
 }
 
-/*ナビゲーションの縦スクロール*/
-#g-nav.panelactive #g-nav-list {
-    /*ナビの数が増えた場合縦スクロール*/
-    position: fixed;
-    z-index: 100000;
+/* メニューが開いた瞬間のアニメーション開始位置 */
+@starting-style {
+    #g-nav[open] {
+        opacity: 0;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    #g-nav[open] {
+        transform: translateY(0);
+    }
+
+    @starting-style {
+        #g-nav[open] {
+            transform: translateY(-100%);
+        }
+    }
+}
+
+#g-nav:modal {
+    overscroll-behavior: contain;
+}
+
+#g-nav::backdrop {
+    background-color: transparent;
+    overflow: hidden;
+    overscroll-behavior: contain;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #g-nav,
+    .openbtn span {
+        transition-duration: 0.1s;
+    }
+}
+
+/* ナビゲーションの縦スクロール */
+#g-nav-list {
+    position: relative;
     width: 100%;
-    height: 100vh;
-    /*表示する高さ*/
+    height: 100dvh;
     overflow: auto;
-    -webkit-overflow-scrolling: touch;
+    display: grid;
+    place-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
-/*ナビゲーション*/
+#g-nav-list nav {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+/* ナビゲーション一覧 */
 #g-nav ul {
-    /*ナビゲーション天地中央揃え*/
-    position: absolute;
-    z-index: 100000;
     width: 500px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    max-width: calc(100vw - 2rem);
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
-
-/*リストのレイアウト設定*/
 
 #g-nav li {
     list-style: none;
@@ -117,146 +160,127 @@
 }
 
 #g-nav li a {
-    /* color: #333; */
     text-align: left;
     text-decoration: none;
     padding: 10px;
     display: block;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    /* font-weight: bold; */
-    text-shadow: 0px 0px 5px white;
+    text-shadow: 0 0 5px white;
 }
 
 .nav {
     left: -10px;
-    /*丸の基点とするためrelativeを指定*/
     position: relative;
-    /*ボタンの形状*/
-    display: inline-block;
-    padding: 0 0 0 15px;
     line-height: 50px;
-    color: #000;
-    text-decoration: none;
-    outline: none;
+    color: #000000;
     font-weight: bold;
-    text-shadow: 0px 0px 5px white;
+    text-shadow: 0 0 5px white;
 }
 
-/* 丸が動く */
+/* ホバー時に斜めカットの帯が動く装飾 */
 .nav::before {
-    content: '';
-    /*絶対配置で丸の位置を決める*/
+    content: "";
     position: absolute;
     left: 0;
     z-index: -1;
-    /*丸の形状*/
     width: 50px;
     height: 50px;
     background: #deeaffc0;
-    color: #fff;
-    /* border-radius: 50px; */
-    /*アニメーションの指定*/
-    transition: .3s ease-out;
-    /* border: solid #333; */
-    border-bottom: 3px solid #333;
+    transition: 0.3s ease-out;
+    border-bottom: 3px solid #333333;
     transform: skewX(-30deg);
     opacity: 0;
 }
 
-/*hoverした際の形状*/
-.nav:hover::before {
+.nav:is(:hover, :focus-visible)::before {
     width: 540px;
+    max-width: calc(100vw - 1rem);
     opacity: 1;
 }
 
-/* 矢印の形状 */
+/* 右側の小さな矢印 */
 .nav::after {
     position: absolute;
-    content: '';
+    content: "";
     top: 1.3em;
     right: -15px;
     width: 5px;
     height: 5px;
-    border-top: 1px solid #000;
-    border-right: 1px solid #000;
+    border-top: 1px solid #000000;
+    border-right: 1px solid #000000;
     transform: rotate(45deg);
 }
 
 .navsub {
     left: 20px;
     font-size: 70%;
-    /*丸の基点とするためrelativeを指定*/
     position: relative;
-    /*ボタンの形状*/
-    display: inline-block;
-    padding: 0 0 0 15px;
     line-height: 50px;
-    color: #000;
-    text-decoration: none;
-    outline: none;
+    color: #000000;
     font-weight: bolder;
-    text-shadow: 0px 0px 5px white;
+    text-shadow: 0 0 5px white;
 }
 
-/* 丸が動く */
 .navsub::before {
-    content: '';
-    /*絶対配置で丸の位置を決める*/
+    content: "";
     position: absolute;
     left: 0;
     z-index: -1;
-    /*丸の形状*/
     width: 50px;
     height: 50px;
     background: #bbd4ffc0;
-    /* border: solid #333; */
     transform: skewX(-30deg);
-    /* border-radius: 50px; */
-    border-bottom: 3px solid #333;
-    /*アニメーションの指定*/
-    transition: .3s ease-out;
+    border-bottom: 3px solid #333333;
+    transition: 0.3s ease-out;
     opacity: 0;
 }
 
-/*hoverした際の形状*/
-.navsub:hover::before {
+.navsub:is(:hover, :focus-visible)::before {
     width: 510px;
+    max-width: calc(100vw - 2rem);
     opacity: 1;
 }
 
-/* 矢印の形状 */
 .navsub::after {
     position: absolute;
-    content: '';
+    content: "";
     top: 1.7em;
     right: 15px;
     width: 5px;
     height: 5px;
-    border-top: 1px solid #000;
-    border-right: 1px solid #000;
+    border-top: 1px solid #000000;
+    border-right: 1px solid #000000;
     transform: rotate(45deg);
 }
 
-/* TODO:ドロップダウンメニュー対応化 */
-/* -> 画面の縦幅に応じて内容の表示を変えるという手段に出る */
-/* @media screen and (max-height: 870px) {
-    #g-nav ul {
-        top: 65%;
-    }
-} */
-
-/* @media screen and (max-height: 780px) {
-    #g-nav ul {
-        top: 65%;
-    }
+/* メニュー右下のYouTubeボタン */
+.nav-youtube-btn {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: 120;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background-color: #5996ff;
+    backdrop-filter: blur(2px);
+    color: #ffffff;
+    text-decoration: none;
+    filter: drop-shadow(0 0 3px white);
+    font-size: 1rem;
+    transition: background-color 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out;
 }
- */
-@media screen and (max-height: 665px) {
-    #g-nav ul {
-        top: 50%;
-    }
 
+.nav-youtube-btn:hover {
+    background-color: #5584d4;
+}
+
+@media screen and (max-height: 665px) {
     #g-nav li a.navsub {
         display: none;
     }

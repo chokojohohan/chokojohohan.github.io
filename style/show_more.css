@@ -1,94 +1,68 @@
-/*inputを非表示 & 閉じた時の位置調整*/
+@charset "utf-8";
+
+/* 続きを読む（ボタン押下前は先頭だけ表示し、下端をグラデーションでフェードさせる） */
 .open-box {
     position: relative;
 }
 
-input[type="checkbox"].on-off {
-    position: absolute;
-    bottom: 0;
-    display: block;
-    opacity: 0;
-}
-
-/*ラベル（「開く」ボタン）*/
 .open-label {
-    margin: 0 1.5em;
-    padding: 0.8em;
-    display: block;
-    color: #fff;
-    /* font-weight: bold; */
-    text-align: center;
-    /* box-shadow: 0 2px 0 2px #aaa; */
-    background: #4472c4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 3rem);
+    min-height: 44px;
+    margin: 0.75rem 1.5rem 1.875rem;
+    padding: 0.75rem 1rem;
+    border: 0;
     border-radius: 10px;
-    position: relative;
+    background: var(--brand-blue);
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
     cursor: pointer;
     user-select: none;
-    margin-bottom: 30px;
+    transition: background-color 0.2s ease;
 }
 
-/*ボタンっぽい効果*/
-/* .open-label:active {
-    box-shadow: 0 0 0 0;
-} */
 .open-label:hover {
-    /* background: -webkit-linear-gradient(bottom, #4472c4 1%, #4472c4 80%); */
-    background: #4472c4;
-} 
-
-/*ラベルに表示するテキスト*/
-.open-label::after {
-    content: 'タップで開く';
+    background: var(--brand-blue-hover);
 }
 
-.on-off:checked~.open-label::after {
-    content: 'タップで閉じる';
-}
-
-/*開閉エリア*/
-.open,
-.open_black {
-    padding: 1em;
+/* 折りたたみ時のサイズ・グラデーションマスク（下に向かって透明にする） */
+.open-panel {
+    padding: 1rem;
     border-radius: 8px;
     height: 450px;
-    /*ちらっと見える部分の高さ*/
     overflow: hidden;
-    transition: .5s;
     position: relative;
+    mask-image: linear-gradient(to bottom, #000000 10%, transparent 100%);
+    transition: height 0.5s ease, padding 0.35s ease;
 }
 
-.on-off:checked~.open,
-.on-off:checked~.open_black {
-    padding: 1.5em 1em;
+/* ボタンで展開された状態（script.js が is-open クラスを付ける） */
+.open-panel.is-open {
+    padding: 1.5rem 1rem;
     height: auto;
+    overflow: visible;
+    mask-image: none;
 }
 
-/*開閉エリアにぼかしを乗せる*/
-.open::before {
-    content: '';
-    background: linear-gradient(to bottom, transparent, #ffffff 100%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 3;
+@media (prefers-reduced-motion: reduce) {
+    .open-panel {
+        transition: none;
+    }
 }
 
-.open_black::before {
-    content: '';
-    background: linear-gradient(to bottom, transparent, #000000 100%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 3;
-}
+/* スマホ幅のみ折りたたむ場合用クラス（about.html の資格表で使用） */
+@media screen and (min-width: 641px) {
+    .open-box--sp-only .open-panel {
+        height: auto;
+        overflow: visible;
+        padding: 0;
+        mask-image: none;
+    }
 
-/*開いたらぼかしを消す*/
-.on-off:checked~.open::before,
-.on-off:checked~.open_black::before {
-    background: none;
-    z-index: -1;
+    .open-box--sp-only .open-label {
+        display: none;
+    }
 }
